@@ -54,12 +54,3 @@ Windows PowerShell: `$env:ZENTRO_DATASET = "C:\path\to\dataset"` (or put it in `
 ## Notes
 - Uses only the synthetic dataset. Do not commit keys, `.env`, virtualenvs or the dataset.
 - Tickets are written by the mock tool to `<dataset>/tools/tickets_created.csv`.
-
-## Submitting
-```bash
-python -m src.evaluate --fresh       # final numbers (resumable)
-python make_report.py "Team name"    # report.pdf
-python run.py --audio_dir clips --out_dir sample_outputs
-# add demo.mp4 (max 2 min), put your GitHub URL on the "Repository:" line above, then:
-python package.py team_name          # checks everything and builds team_name_voiceops.zip
-```
