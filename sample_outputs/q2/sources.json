@@ -1,0 +1,146 @@
+[
+  {
+    "id": "REF-2",
+    "title": "Refunds policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-06-15",
+    "score": 0.85,
+    "text": "[REF-2] How long refunds take after initiation\nRefunds go back to the original payment method. Timelines are counted in business days from the day the refund is initiated.\n\n| Payment method | Time to reach you |\n| --- | --- |\n| UPI | 1 to 3 business days |\n| Credit or debit card | 5 to 7 business days |\n| Net banking | 3 to 5 business days |\n| ZentroMart Wallet | Instant, within 2 hours |\n| Bank transfer (NEFT) for cash-on-delivery orders | 5 to 7 business days |\n| ZentroMart Wallet for cash-on-delivery orders | Instant, within 2 hours |"
+  },
+  {
+    "id": "RET-7",
+    "title": "Returns policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.6051,
+    "text": "[RET-7] After pickup\nReturned items go through a quality check (QC) at the warehouse. The refund is initiated within 2 business days of pickup once the item passes QC. For ZentroMart Plus members, the refund is initiated at the time of pickup. Refund timelines after initiation are in the Refunds policy."
+  },
+  {
+    "id": "REF-6",
+    "title": "Refunds policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-06-15",
+    "score": 0.3797,
+    "text": "[REF-6] Refund reference number\nEvery initiated refund has a refund reference number (RRN) that the customer's bank can trace. Share it when a customer says the money has not arrived."
+  },
+  {
+    "id": "REF-1",
+    "title": "Refunds policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-06-15",
+    "score": 0.3319,
+    "text": "[REF-1] When a refund is initiated\n- **Cancelled before shipping:** immediately on cancellation.\n- **Returned item:** after the item passes quality check, within 2 business days of pickup. ZentroMart Plus members: at pickup.\n- **Prepaid order refused at the door or not delivered after 3 attempts:** once the parcel reaches the warehouse, usually 7 to 10 calendar days after the last delivery attempt."
+  },
+  {
+    "id": "PAY-1",
+    "title": "Payments and cash on delivery",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-04-01",
+    "score": 0.3138,
+    "text": "[PAY-1] Payment methods\nUPI, credit and debit cards, net banking, ZentroMart Wallet and cash on delivery (COD)."
+  },
+  {
+    "id": "FAQ-1",
+    "title": "Frequently asked questions",
+    "doc_type": "faq",
+    "status": "current",
+    "effective_from": "2025-11-01",
+    "score": 0.3102,
+    "text": "[FAQ-1] How long do refunds take?\nRefunds usually take 5 to 7 days to reach your account."
+  },
+  {
+    "id": "holidays.csv",
+    "title": "Warehouse holidays",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0722,
+    "text": "Holidays skipped in business-day counts: 2026-08-15 Independence Day; 2026-10-02 Gandhi Jayanti; 2026-10-19 Warehouse closure (festival); 2026-11-09 Warehouse closure (festival)"
+  },
+  {
+    "id": "products.csv:BKS-0058",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0592,
+    "text": "sku=BKS-0058; title=Pagecraft Guide: Learn Python in 30 Days; brand=Pagecraft; return_category=books_media; price_inr=789; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=Pagecraft Guide: Learn Python in 30 Days. Sold on ZentroMart."
+  },
+  {
+    "id": "pincodes.csv:395007",
+    "title": "Serviceable pincodes",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0193,
+    "text": "pincode city=Surat; state=Gujarat; pincode=395007; metro=False; serviceable=True; cod_available=True; express_available=False"
+  },
+  {
+    "id": "RET-2",
+    "title": "Returns policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[RET-2] Return windows by category\nThe return window starts on the **delivery date** and is counted in calendar days. The category of every product is listed in the `return_category` column of the product catalog.\n\n| Category | Return window | Catalog code |\n| --- | --- | --- |\n| Electronics and accessories | 7 days | `electronics` |\n| Clothing, footwear and bags | 15 days | `fashion` |\n| Home, kitchen and furniture | 10 days | `home_kitchen` |\n| Beauty and personal care (unopened, seal intact) | 7 days | `beauty_sealed` |\n| Books and stationery | 10 days | `books_media` |\n| Grocery, fresh and perishables | Not returnable | `grocery` |\n| Innerwear, lingerie and swimwear | Not returnable | `innerwear` |\n| Gift cards and digital codes | Not returnable | `digital` |"
+  },
+  {
+    "id": "RET-4",
+    "title": "Returns policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[RET-4] Condition of returned items\nItems must be unused, with original tags, packaging, accessories and free gifts. Beauty and personal care products are returnable only if unopened with the seal intact. Electronics must not be physically damaged, and any screen lock or account lock must be removed."
+  },
+  {
+    "id": "KB-00.1",
+    "title": "About this knowledge base",
+    "doc_type": "meta",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[KB-00.1] Which document wins\nWhen two documents disagree, follow this order of precedence:\n\n1. **Policy documents** (doc_type: policy) with status `current`.\n2. **Agent guides** (doc_type: agent_guide).\n3. **Help articles** (doc_type: help).\n4. **FAQs** (doc_type: faq).\n5. **Marketing pages** (doc_type: marketing). These describe benefits in general terms and never override a policy.\n\n\nDocuments marked `status: superseded` are kept for reference only. They apply only to the cases their successor document says they still cover."
+  },
+  {
+    "id": "KB-00.3",
+    "title": "About this knowledge base",
+    "doc_type": "meta",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[KB-00.3] Business days\nA business day is Monday to Saturday, excluding the warehouse holidays below. Refund and logistics timelines are counted in business days. Return windows are counted in calendar days.\n\n| Date | Holiday |\n| --- | --- |\n| 2026-08-15 | Independence Day |\n| 2026-10-02 | Gandhi Jayanti |\n| 2026-10-19 | Warehouse closure (festival) |\n| 2026-11-09 | Warehouse closure (festival) |"
+  },
+  {
+    "id": "ESC-1",
+    "title": "Escalation and human handover",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[ESC-1] When to hand over to a human\nHand over at once when any of these is true:\n\n1. **Damaged, defective or wrong item worth more than ₹10,000.**\n2. **Customer reports an order, payment or account activity they did not make.**\n3. **Customer mentions legal action, a consumer court or a police complaint.**\n4. **Third or later contact about the same issue within 7 days.**\n5. **Refund more than 3 business days past its maximum timeline.**\n6. **Customer asks for a human agent.**\n7. **Product safety risk such as a swelling battery, burning smell, sparks or injury.**\n\nFor the repeat-contact rule, use the `contacts_last_7_days` field returned by order lookup. It counts earlier contacts only, not the current one. Escalate when it is 2 or more."
+  },
+  {
+    "id": "IDV-2",
+    "title": "Verifying the customer",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[IDV-2] How to verify\nAsk for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order. Compare with the `phone_last4` or `delivery_pincode` fields from order lookup."
+  },
+  {
+    "id": "STY-1",
+    "title": "Conversation style",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[STY-1] Opening\nIntroduce yourself as ZentroMart's AI support assistant in your first reply."
+  }
+]

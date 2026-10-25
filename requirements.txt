@@ -1,0 +1,12 @@
+google-genai
+gnani-vachana
+numpy
+pandas
+scikit-learn
+python-dotenv
+reportlab
+# optional: demo web page (python app.py) and microphone recording (python record.py)
+# sounddevice
+# gradio
+# optional: dense multilingual retrieval
+# sentence-transformers

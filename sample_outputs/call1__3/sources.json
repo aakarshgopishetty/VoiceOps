@@ -1,0 +1,146 @@
+[
+  {
+    "id": "CAN-1",
+    "title": "Cancellations policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-05-01",
+    "score": 0.786,
+    "text": "[CAN-1] Before the order ships\nAny order can be cancelled free of charge until it is shipped, by the customer from My Orders in the app. The support assistant cannot cancel orders itself; it guides the customer to My Orders. The refund is initiated immediately."
+  },
+  {
+    "id": "ESC-1",
+    "title": "Escalation and human handover",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.6907,
+    "text": "[ESC-1] When to hand over to a human\nHand over at once when any of these is true:\n\n1. **Damaged, defective or wrong item worth more than ₹10,000.**\n2. **Customer reports an order, payment or account activity they did not make.**\n3. **Customer mentions legal action, a consumer court or a police complaint.**\n4. **Third or later contact about the same issue within 7 days.**\n5. **Refund more than 3 business days past its maximum timeline.**\n6. **Customer asks for a human agent.**\n7. **Product safety risk such as a swelling battery, burning smell, sparks or injury.**\n\nFor the repeat-contact rule, use the `contacts_last_7_days` field returned by order lookup. It counts earlier contacts only, not the current one. Escalate when it is 2 or more."
+  },
+  {
+    "id": "FAQ-4",
+    "title": "Frequently asked questions",
+    "doc_type": "faq",
+    "status": "current",
+    "effective_from": "2025-11-01",
+    "score": 0.6763,
+    "text": "[FAQ-4] Can I talk to a person?\nYes. Ask the assistant to connect you to a human colleague."
+  },
+  {
+    "id": "DWM-5",
+    "title": "Damaged, wrong or missing items policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-05-01",
+    "score": 0.6586,
+    "text": "[DWM-5] Safety issues\nIf a product shows a safety risk, such as a swelling battery, burning smell, sparks or heat, the customer must stop using it immediately. The agent must hand over to a human at once."
+  },
+  {
+    "id": "IDV-3",
+    "title": "Verifying the customer",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.6576,
+    "text": "[IDV-3] If verification fails\nAllow one retry. If it fails again, do not share order details. Offer general policy help and suggest the customer contact support from the registered phone number."
+  },
+  {
+    "id": "DWM-3",
+    "title": "Damaged, wrong or missing items policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-05-01",
+    "score": 0.6208,
+    "text": "[DWM-3] High-value items\nClaims for items worth more than ₹10,000 are handled by the Priority Resolution team. The support agent must create a ticket and hand over; the agent cannot approve these claims."
+  },
+  {
+    "id": "products.csv:ELE-0019",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.2112,
+    "text": "sku=ELE-0019; title=Zentro Boom Max Bluetooth Speaker, Grey; brand=Zentro; return_category=electronics; price_inr=5019; fulfilled_by=ZentroMart; assured=False; warranty_months=12; description=Zentro Boom Max Bluetooth Speaker, Grey. Sold on ZentroMart."
+  },
+  {
+    "id": "products.csv:ELE-0018",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.1954,
+    "text": "sku=ELE-0018; title=Zentro Boom Mini Bluetooth Speaker, Grey; brand=Zentro; return_category=electronics; price_inr=1709; fulfilled_by=Sunrise Electronics; assured=True; warranty_months=6; description=Zentro Boom Mini Bluetooth Speaker, Grey. Sold on ZentroMart. Ships from a marketplace seller."
+  },
+  {
+    "id": "pincodes.csv:744101",
+    "title": "Serviceable pincodes",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0554,
+    "text": "pincode city=Port Blair; state=Andaman and Nicobar Islands; pincode=744101; metro=False; serviceable=False; cod_available=False; express_available=False"
+  },
+  {
+    "id": "KB-00.1",
+    "title": "About this knowledge base",
+    "doc_type": "meta",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[KB-00.1] Which document wins\nWhen two documents disagree, follow this order of precedence:\n\n1. **Policy documents** (doc_type: policy) with status `current`.\n2. **Agent guides** (doc_type: agent_guide).\n3. **Help articles** (doc_type: help).\n4. **FAQs** (doc_type: faq).\n5. **Marketing pages** (doc_type: marketing). These describe benefits in general terms and never override a policy.\n\n\nDocuments marked `status: superseded` are kept for reference only. They apply only to the cases their successor document says they still cover."
+  },
+  {
+    "id": "KB-00.3",
+    "title": "About this knowledge base",
+    "doc_type": "meta",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[KB-00.3] Business days\nA business day is Monday to Saturday, excluding the warehouse holidays below. Refund and logistics timelines are counted in business days. Return windows are counted in calendar days.\n\n| Date | Holiday |\n| --- | --- |\n| 2026-08-15 | Independence Day |\n| 2026-10-02 | Gandhi Jayanti |\n| 2026-10-19 | Warehouse closure (festival) |\n| 2026-11-09 | Warehouse closure (festival) |"
+  },
+  {
+    "id": "IDV-2",
+    "title": "Verifying the customer",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[IDV-2] How to verify\nAsk for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order. Compare with the `phone_last4` or `delivery_pincode` fields from order lookup."
+  },
+  {
+    "id": "STY-1",
+    "title": "Conversation style",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[STY-1] Opening\nIntroduce yourself as ZentroMart's AI support assistant in your first reply."
+  },
+  {
+    "id": "products.csv:GRO-0063",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0,
+    "text": "sku=GRO-0063; title=FarmFolk Cold-pressed Groundnut Oil 1 L; brand=FarmFolk; return_category=grocery; price_inr=259; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=FarmFolk Cold-pressed Groundnut Oil 1 L. Sold on ZentroMart."
+  },
+  {
+    "id": "products.csv:GRO-0060",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0,
+    "text": "sku=GRO-0060; title=FarmFolk Mango Pickle 500 g; brand=FarmFolk; return_category=grocery; price_inr=159; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=FarmFolk Mango Pickle 500 g. Sold on ZentroMart."
+  },
+  {
+    "id": "products.csv:GRO-0061",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0,
+    "text": "sku=GRO-0061; title=FarmFolk California Almonds 500 g; brand=FarmFolk; return_category=grocery; price_inr=629; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=FarmFolk California Almonds 500 g. Sold on ZentroMart."
+  }
+]

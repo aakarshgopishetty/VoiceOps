@@ -1,0 +1,146 @@
+[
+  {
+    "id": "IDV-2",
+    "title": "Verifying the customer",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.8157,
+    "text": "[IDV-2] How to verify\nAsk for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order. Compare with the `phone_last4` or `delivery_pincode` fields from order lookup."
+  },
+  {
+    "id": "TRK-1",
+    "title": "Tracking your order",
+    "doc_type": "help",
+    "status": "current",
+    "effective_from": "2026-02-01",
+    "score": 0.6504,
+    "text": "[TRK-1] Order statuses\n| Status shown | What it means |\n| --- | --- |\n| Placed | Payment confirmed, waiting to be packed |\n| Packed | Packed at the warehouse, waiting for courier pickup |\n| Shipped | With the courier, on the way |\n| Out for delivery | With the delivery executive today |\n| Delivery attempted | The courier could not deliver; see DEL-3 |\n| Delivered | Handed over at the address |\n| Returned to origin (RTO) | Could not be delivered and is going back to the warehouse; prepaid refunds follow REF-1 |\n| Cancelled | Cancelled before shipping |"
+  },
+  {
+    "id": "STY-3",
+    "title": "Conversation style",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.5484,
+    "text": "[STY-3] Voice replies\nWhen replying by voice, keep it to two or three short sentences. Say dates with the month name (\"the 24th of October\"), read order IDs in groups of four digits, and say amounts in rupees (\"forty-nine rupees\")."
+  },
+  {
+    "id": "TRK-2",
+    "title": "Tracking your order",
+    "doc_type": "help",
+    "status": "current",
+    "effective_from": "2026-02-01",
+    "score": 0.4793,
+    "text": "[TRK-2] Delivered but not received\nIf an order shows Delivered but the customer has not received it, check with family, neighbours or the building security, then report it within 48 hours as a missing item under DWM-1."
+  },
+  {
+    "id": "REF-5",
+    "title": "Refunds policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-06-15",
+    "score": 0.3962,
+    "text": "[REF-5] Delivery and COD fees\nDelivery fees and the ₹25 cash-on-delivery fee are refunded only when the whole order is cancelled before shipping or returned because it was damaged, defective or wrong."
+  },
+  {
+    "id": "DEL-6",
+    "title": "Delivery and shipping policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-04-01",
+    "score": 0.3808,
+    "text": "[DEL-6] Changing the address\nThe delivery address can be changed before the order ships. After shipping, the address cannot be changed."
+  },
+  {
+    "id": "products.csv:DGT-0069",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0433,
+    "text": "sku=DGT-0069; title=ZentroMart Gift Card ₹500; brand=ZentroMart; return_category=digital; price_inr=500; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=ZentroMart Gift Card ₹500. Sold on ZentroMart."
+  },
+  {
+    "id": "products.csv:DGT-0070",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0416,
+    "text": "sku=DGT-0070; title=ZentroMart Gift Card ₹1,000; brand=ZentroMart; return_category=digital; price_inr=1000; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=ZentroMart Gift Card ₹1,000. Sold on ZentroMart."
+  },
+  {
+    "id": "products.csv:ELE-0010",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0323,
+    "text": "sku=ELE-0010; title=Voltra 65W GaN Fast Charger, Green; brand=Voltra; return_category=electronics; price_inr=2189; fulfilled_by=Sunrise Electronics; assured=True; warranty_months=12; description=Voltra 65W GaN Fast Charger, Green. Sold on ZentroMart. Ships from a marketplace seller."
+  },
+  {
+    "id": "KB-00.1",
+    "title": "About this knowledge base",
+    "doc_type": "meta",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[KB-00.1] Which document wins\nWhen two documents disagree, follow this order of precedence:\n\n1. **Policy documents** (doc_type: policy) with status `current`.\n2. **Agent guides** (doc_type: agent_guide).\n3. **Help articles** (doc_type: help).\n4. **FAQs** (doc_type: faq).\n5. **Marketing pages** (doc_type: marketing). These describe benefits in general terms and never override a policy.\n\n\nDocuments marked `status: superseded` are kept for reference only. They apply only to the cases their successor document says they still cover."
+  },
+  {
+    "id": "KB-00.3",
+    "title": "About this knowledge base",
+    "doc_type": "meta",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[KB-00.3] Business days\nA business day is Monday to Saturday, excluding the warehouse holidays below. Refund and logistics timelines are counted in business days. Return windows are counted in calendar days.\n\n| Date | Holiday |\n| --- | --- |\n| 2026-08-15 | Independence Day |\n| 2026-10-02 | Gandhi Jayanti |\n| 2026-10-19 | Warehouse closure (festival) |\n| 2026-11-09 | Warehouse closure (festival) |"
+  },
+  {
+    "id": "ESC-1",
+    "title": "Escalation and human handover",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[ESC-1] When to hand over to a human\nHand over at once when any of these is true:\n\n1. **Damaged, defective or wrong item worth more than ₹10,000.**\n2. **Customer reports an order, payment or account activity they did not make.**\n3. **Customer mentions legal action, a consumer court or a police complaint.**\n4. **Third or later contact about the same issue within 7 days.**\n5. **Refund more than 3 business days past its maximum timeline.**\n6. **Customer asks for a human agent.**\n7. **Product safety risk such as a swelling battery, burning smell, sparks or injury.**\n\nFor the repeat-contact rule, use the `contacts_last_7_days` field returned by order lookup. It counts earlier contacts only, not the current one. Escalate when it is 2 or more."
+  },
+  {
+    "id": "STY-1",
+    "title": "Conversation style",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[STY-1] Opening\nIntroduce yourself as ZentroMart's AI support assistant in your first reply."
+  },
+  {
+    "id": "products.csv:GRO-0063",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0,
+    "text": "sku=GRO-0063; title=FarmFolk Cold-pressed Groundnut Oil 1 L; brand=FarmFolk; return_category=grocery; price_inr=259; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=FarmFolk Cold-pressed Groundnut Oil 1 L. Sold on ZentroMart."
+  },
+  {
+    "id": "products.csv:GRO-0060",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0,
+    "text": "sku=GRO-0060; title=FarmFolk Mango Pickle 500 g; brand=FarmFolk; return_category=grocery; price_inr=159; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=FarmFolk Mango Pickle 500 g. Sold on ZentroMart."
+  },
+  {
+    "id": "products.csv:GRO-0061",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0,
+    "text": "sku=GRO-0061; title=FarmFolk California Almonds 500 g; brand=FarmFolk; return_category=grocery; price_inr=629; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=FarmFolk California Almonds 500 g. Sold on ZentroMart."
+  }
+]

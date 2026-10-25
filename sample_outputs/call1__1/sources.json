@@ -1,0 +1,119 @@
+[
+  {
+    "id": "TRK-1",
+    "title": "Tracking your order",
+    "doc_type": "help",
+    "status": "current",
+    "effective_from": "2026-02-01",
+    "score": 0.765,
+    "text": "[TRK-1] Order statuses\n| Status shown | What it means |\n| --- | --- |\n| Placed | Payment confirmed, waiting to be packed |\n| Packed | Packed at the warehouse, waiting for courier pickup |\n| Shipped | With the courier, on the way |\n| Out for delivery | With the delivery executive today |\n| Delivery attempted | The courier could not deliver; see DEL-3 |\n| Delivered | Handed over at the address |\n| Returned to origin (RTO) | Could not be delivered and is going back to the warehouse; prepaid refunds follow REF-1 |\n| Cancelled | Cancelled before shipping |"
+  },
+  {
+    "id": "IDV-2",
+    "title": "Verifying the customer",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.7282,
+    "text": "[IDV-2] How to verify\nAsk for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order. Compare with the `phone_last4` or `delivery_pincode` fields from order lookup."
+  },
+  {
+    "id": "TRK-2",
+    "title": "Tracking your order",
+    "doc_type": "help",
+    "status": "current",
+    "effective_from": "2026-02-01",
+    "score": 0.7153,
+    "text": "[TRK-2] Delivered but not received\nIf an order shows Delivered but the customer has not received it, check with family, neighbours or the building security, then report it within 48 hours as a missing item under DWM-1."
+  },
+  {
+    "id": "REF-6",
+    "title": "Refunds policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-06-15",
+    "score": 0.5904,
+    "text": "[REF-6] Refund reference number\nEvery initiated refund has a refund reference number (RRN) that the customer's bank can trace. Share it when a customer says the money has not arrived."
+  },
+  {
+    "id": "IDV-3",
+    "title": "Verifying the customer",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.5608,
+    "text": "[IDV-3] If verification fails\nAllow one retry. If it fails again, do not share order details. Offer general policy help and suggest the customer contact support from the registered phone number."
+  },
+  {
+    "id": "IDV-1",
+    "title": "Verifying the customer",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.556,
+    "text": "[IDV-1] When verification is needed\nBefore sharing anything about a specific order (status, items, address, amounts, refund details), verify the customer. General policy questions need no verification."
+  },
+  {
+    "id": "pincodes.csv:400053",
+    "title": "Serviceable pincodes",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0376,
+    "text": "pincode city=Mumbai; state=Maharashtra; pincode=400053; metro=True; serviceable=True; cod_available=True; express_available=True"
+  },
+  {
+    "id": "pincodes.csv:400076",
+    "title": "Serviceable pincodes",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0376,
+    "text": "pincode city=Mumbai; state=Maharashtra; pincode=400076; metro=True; serviceable=True; cod_available=True; express_available=True"
+  },
+  {
+    "id": "products.csv:FSH-0033",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.0342,
+    "text": "sku=FSH-0033; title=Kaafi Running Sneakers, White; brand=Kaafi; return_category=fashion; price_inr=2799; fulfilled_by=Shree Traders; assured=False; warranty_months=0; description=Kaafi Running Sneakers, White. Sold on ZentroMart. Ships from a marketplace seller."
+  },
+  {
+    "id": "KB-00.1",
+    "title": "About this knowledge base",
+    "doc_type": "meta",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[KB-00.1] Which document wins\nWhen two documents disagree, follow this order of precedence:\n\n1. **Policy documents** (doc_type: policy) with status `current`.\n2. **Agent guides** (doc_type: agent_guide).\n3. **Help articles** (doc_type: help).\n4. **FAQs** (doc_type: faq).\n5. **Marketing pages** (doc_type: marketing). These describe benefits in general terms and never override a policy.\n\n\nDocuments marked `status: superseded` are kept for reference only. They apply only to the cases their successor document says they still cover."
+  },
+  {
+    "id": "KB-00.3",
+    "title": "About this knowledge base",
+    "doc_type": "meta",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[KB-00.3] Business days\nA business day is Monday to Saturday, excluding the warehouse holidays below. Refund and logistics timelines are counted in business days. Return windows are counted in calendar days.\n\n| Date | Holiday |\n| --- | --- |\n| 2026-08-15 | Independence Day |\n| 2026-10-02 | Gandhi Jayanti |\n| 2026-10-19 | Warehouse closure (festival) |\n| 2026-11-09 | Warehouse closure (festival) |"
+  },
+  {
+    "id": "ESC-1",
+    "title": "Escalation and human handover",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[ESC-1] When to hand over to a human\nHand over at once when any of these is true:\n\n1. **Damaged, defective or wrong item worth more than ₹10,000.**\n2. **Customer reports an order, payment or account activity they did not make.**\n3. **Customer mentions legal action, a consumer court or a police complaint.**\n4. **Third or later contact about the same issue within 7 days.**\n5. **Refund more than 3 business days past its maximum timeline.**\n6. **Customer asks for a human agent.**\n7. **Product safety risk such as a swelling battery, burning smell, sparks or injury.**\n\nFor the repeat-contact rule, use the `contacts_last_7_days` field returned by order lookup. It counts earlier contacts only, not the current one. Escalate when it is 2 or more."
+  },
+  {
+    "id": "STY-1",
+    "title": "Conversation style",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.0,
+    "text": "[STY-1] Opening\nIntroduce yourself as ZentroMart's AI support assistant in your first reply."
+  }
+]
