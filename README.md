@@ -1,6 +1,6 @@
 # VoiceOps 2026 - ZentroMart voice support agent
 
-Repository: https://github.com/aakarshgopishetty/VoiceOps.git   <- replace with your public GitHub URL
+Repository: https://github.com/aakarshgopishetty/VoiceOps.git
 
 A support agent that answers from company documents, holds a multi-turn conversation (identity check, order lookup,
 ticket handover) and speaks/listens through **Gnani STT/TTS** (the only speech service used).
