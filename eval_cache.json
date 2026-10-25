@@ -805,7 +805,2390 @@
      }
     ]
    ]
+  },
+  "PQ0029": {
+   "id": "PQ0029",
+   "q": "credit card wala refund 12 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+   "step1": "Hello! I am ZentroMart's AI assistant. Your credit card refund typically takes 5 to 7 working days, so you should receive it by 21 October 2026.",
+   "step2": "Main ZentroMart ki AI assistant hoon. Aapka credit card refund 17 October 2026 aur 21 October 2026 ke beech aa jaana chahiye.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "REF-2",
+    "KB-00.3"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PAY-1",
+    "PLS-2",
+    "REF-2",
+    "REF-6",
+    "RET-2",
+    "RET-4",
+    "RET-5",
+    "RET-7",
+    "RET-8",
+    "STY-1",
+    "holidays.csv",
+    "products.csv:DGT-0069",
+    "products.csv:DGT-0070"
+   ],
+   "tools": [
+    [
+     "refund_window",
+     {
+      "start_date": "2026-10-12",
+      "payment_method": "credit card"
+     }
+    ]
+   ]
+  },
+  "PQ0030": {
+   "id": "PQ0030",
+   "q": "The Kestrel Book 14 Laptop (SKU ELE-0023) I received yesterday has a crack. I want it sorted.",
+   "step1": "Hello! I am ZentroMart's AI assistant, and I can certainly help you with your damaged laptop. We can arrange a replacement for your Kestrel Book 14 Laptop if you share a few photos of the crack within 3 days of delivery. Would you like to proceed with the replacement request right away?",
+   "step2": "I am ZentroMart's AI assistant. Since your Kestrel Book 14 Laptop has a crack and is priced above ₹10,000, I have created a ticket for you, and a colleague from our Priority Resolution team will contact you shortly to help sort this out.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 0.6666666666666666,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "DWM-3",
+    "ESC-1",
+    "products.csv:ELE-0023"
+   ],
+   "retrieved": [
+    "DWM-1",
+    "DWM-2",
+    "DWM-4",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-5",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-6",
+    "STY-1",
+    "TRK-2",
+    "products.csv:ELE-0013",
+    "products.csv:ELE-0022",
+    "products.csv:ELE-0023"
+   ],
+   "tools": [
+    [
+     "create_ticket",
+     {
+      "reason": "Damaged item priced above 10,000 INR requires immediate handover per ESC-1 rule 1.",
+      "summary": "Customer reported a crack in the Kestrel Book 14 Laptop (SKU ELE-0023, price INR 45999) received yesterday. Item is damaged and priced above 10,000 INR. Escalating to Priority Resolution team per ESC-1.",
+      "intent": "damaged_item"
+     }
+    ]
+   ]
+  },
+  "PQ0031": {
+   "id": "PQ0031",
+   "q": "My Bluetooth speaker won't turn on at all.",
+   "step1": "Hello! I am ZentroMart's AI assistant, and I can help you with your Bluetooth speaker. Please try charging it with a different adapter and cable for at least 30 minutes, or press and hold the power button for 10 seconds to reset it. If it still does not turn on, let me know so I can help you arrange a replacement.",
+   "step2": "Hello, I am ZentroMart's AI support assistant.\n\nPlease charge your Bluetooth speaker for at least 30 minutes with the original cable, then hold the power button for 10 seconds to force a restart. If the problem continues, the item can be returned within its window or claimed under warranty.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "TRB-4"
+   ],
+   "retrieved": [
+    "DWM-2",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-6",
+    "RET-8",
+    "STY-1",
+    "TRB-1",
+    "TRB-2",
+    "TRB-3",
+    "TRB-4",
+    "WAR-1",
+    "WAR-2",
+    "products.csv:ELE-0018",
+    "products.csv:ELE-0019",
+    "products.csv:FSH-0033"
+   ],
+   "tools": []
+  },
+  "PQ0032": {
+   "id": "PQ0032",
+   "q": "SKU ELE-0003 pe ZentroMart Assured hai kya? Claim kaise karein?",
+   "step1": "Hello! I am your ZentroMart AI assistant. Yes, SKU ELE-0003 has ZentroMart Assured, and you can claim it by going to your orders page and selecting the return or replacement option within 7 days. Let me know if you need any more help.",
+   "step2": "Hello, I am your ZentroMart AI assistant. Yes, SKU ELE-0003 carries a 12-month ZentroMart Assured warranty from the delivery date. You can raise a claim in the app under My Orders, and ZentroMart will arrange pickup and repair or replacement.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "WAR-2",
+    "products.csv:ELE-0003"
+   ],
+   "retrieved": [
+    "DWM-3",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "MKS-3",
+    "PLS-2",
+    "STY-1",
+    "WAR-1",
+    "WAR-2",
+    "WAR-3",
+    "products.csv:ELE-0001",
+    "products.csv:ELE-0003",
+    "products.csv:ELE-0005"
+   ],
+   "tools": []
+  },
+  "PQ0033": {
+   "id": "PQ0033",
+   "q": "My refund to net banking was started on 17 October 2026. By which date should I have it?",
+   "step1": "Hello! I am ZentroMart's AI assistant, and I would be happy to help you today. Your refund to net banking typically takes 3 to 5 business days to credit. You should receive it by 22 October 2026.",
+   "step2": "I am ZentroMart's AI assistant. Your net banking refund started on 17 October 2026 should reach you between 22 October 2026 and 24 October 2026.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "REF-2",
+    "KB-00.3"
+   ],
+   "retrieved": [
+    "DEL-1",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PAY-1",
+    "REF-2",
+    "REF-6",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-7",
+    "RET-8",
+    "STY-1",
+    "holidays.csv",
+    "products.csv:BKS-0058",
+    "products.csv:ELE-0007"
+   ],
+   "tools": [
+    [
+     "refund_window",
+     {
+      "payment_method": "net banking",
+      "start_date": "2026-10-17"
+     }
+    ]
+   ]
+  },
+  "PQ0034": {
+   "id": "PQ0034",
+   "q": "Can you deliver to Dubai?",
+   "step1": "I am your ZentroMart AI assistant. \n\nMaaf kijiye, we currently deliver only within India and do not ship to Dubai.",
+   "step2": "Hello! I am ZentroMart's AI support assistant. We currently deliver only within India.",
+   "judge1": true,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "DEL-5",
+    "FAQ-5"
+   ],
+   "retrieved": [
+    "DEL-1",
+    "DEL-2",
+    "DEL-5",
+    "DEL-6",
+    "ESC-1",
+    "FAQ-5",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-5",
+    "STY-1",
+    "pincodes.csv:560034",
+    "pincodes.csv:560076",
+    "pincodes.csv:570017"
+   ],
+   "tools": []
+  },
+  "PQ0035": {
+   "id": "PQ0035",
+   "q": "net banking wala refund 12 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+   "step1": "Hello, I am ZentroMart's AI customer support assistant. Net banking refunds usually take 5 to 7 working days to reflect in your account. Since it started on 12 October 2026, you should receive it by 21 October 2026.",
+   "step2": "Hello, main ZentroMart ka AI assistant hoon. Net banking refund jo 12 October 2026 ko shuru hua tha, woh 3 to 5 business days ke andar 15 October 2026 aur 17 October 2026 ke beech aa jaana chahiye.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "REF-2",
+    "KB-00.3"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PAY-1",
+    "REF-1",
+    "REF-2",
+    "REF-6",
+    "RET-2",
+    "RET-4",
+    "RET-7",
+    "RET-8",
+    "STY-1",
+    "holidays.csv",
+    "products.csv:HOM-0049",
+    "products.csv:HOM-0050"
+   ],
+   "tools": [
+    [
+     "refund_window",
+     {
+      "start_date": "2026-10-12",
+      "payment_method": "net banking"
+     }
+    ]
+   ]
+  },
+  "PQ0036": {
+   "id": "PQ0036",
+   "q": "The Comfi One-piece Swimsuit doesn't fit. Can I send it back?",
+   "step1": "Hello! I am ZentroMart's AI assistant, and yes, you can return the Comfi One-piece Swimsuit within 7 days of delivery. Please visit your account page to start the return request, and our delivery partner will pick it up from your address.",
+   "step2": "I am ZentroMart's AI support assistant. \n\nMaaf kijiye, innerwear, lingerie and swimwear items cannot be returned for change of mind.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "RET-2",
+    "RET-5",
+    "products.csv:INR-0068"
+   ],
+   "retrieved": [
+    "DWM-2",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "MKS-2",
+    "PLS-2",
+    "RET-2",
+    "RET-4",
+    "RET-5",
+    "RET-6",
+    "RET-9",
+    "STY-1",
+    "products.csv:INR-0064",
+    "products.csv:INR-0067",
+    "products.csv:INR-0068"
+   ],
+   "tools": []
+  },
+  "PQ0037": {
+   "id": "PQ0037",
+   "q": "क्या आपकी कोई दुकान कोच्चि में है?",
+   "step1": "नमस्ते, मैं ज़ेंट्रोमार्ट का एआई ग्राहक सहायता सहायक हूँ। माफ़ कीजिए, कोच्चि में हमारी कोई भौतिक दुकान नहीं है, हम केवल ऑनलाइन डिलीवरी करते हैं। आप हमारी वेबसाइट या ऐप से किराने का सामान और इलेक्ट्रॉनिक्स ऑनलाइन मँगवा सकते हैं।",
+   "step2": "नमस्ते, मैं ZentroMart का AI सहायक हूँ। हमारी कोच्चि में कोई भौतिक दुकान नहीं है, हम केवल ऑनलाइन डिलीवरी करते हैं। कोच्चि के पिनकोड 682024 पर हमारे माध्यम से ऑर्डर डिलीवर किए जाते हैं।",
+   "judge1": false,
+   "judge2": false,
+   "recall": null,
+   "keys1": false,
+   "keys2": false,
+   "gold": [],
+   "retrieved": [
+    "DEL-6",
+    "ESC-1",
+    "FAQH-1",
+    "FAQH-4",
+    "IDV-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "STY-1",
+    "TRB-2",
+    "WAR-3",
+    "pincodes.csv:682024",
+    "products.csv:HOM-0043",
+    "products.csv:HOM-0045"
+   ],
+   "tools": []
+  },
+  "PQ0039": {
+   "id": "PQ0039",
+   "q": "The Comfi Cotton Briefs (Pack of 3) doesn't fit. Can I send it back?",
+   "step1": "Hello, I am ZentroMart's AI assistant. Sorry, but we cannot accept returns or exchanges on innerwear like the Comfi Cotton Briefs (Pack of 3) due to hygiene reasons. You can check our return policy details on our website if you need more help.",
+   "step2": "Hello, I am ZentroMart's AI assistant. Innerwear, lingerie and swimwear are not returnable. I cannot accept a return for this item.",
+   "judge1": true,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "RET-2",
+    "RET-5",
+    "products.csv:INR-0065"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PLS-2",
+    "REF-1",
+    "REF-2",
+    "REF-6",
+    "RET-2",
+    "RET-4",
+    "RET-5",
+    "RET-7",
+    "RET-9",
+    "STY-1",
+    "products.csv:HOM-0046",
+    "products.csv:INR-0064",
+    "products.csv:INR-0065"
+   ],
+   "tools": []
+  },
+  "PQ0040": {
+   "id": "PQ0040",
+   "q": "ऑर्डर शिप हो गया है, क्या अब कैंसिल हो सकता है?",
+   "step1": "नमस्ते, मैं ZentroMart का AI कस्टमर-सपोर्ट असिस्टेंट हूँ। माफ़ कीजिए, एक बार ऑर्डर शिप हो जाने के बाद उसे कैंसिल नहीं किया जा सकता है। आप चाहें तो ऑर्डर मिलने पर उसे रिटर्न कर सकते हैं।",
+   "step2": "मैं ZentroMart का AI असिस्टेंट हूँ। शिप हो चुका ऑर्डर कैंसिल नहीं किया जा सकता है। आप डिलीवरी के समय पार्सल लेने से मना कर सकते हैं या फिर डिलीवरी मिलने के बाद रिटर्न कर सकते हैं।",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "FAQH-1",
+    "CAN-2"
+   ],
+   "retrieved": [
+    "CAN-1",
+    "CAN-2",
+    "CAN-4",
+    "ESC-1",
+    "FAQH-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-1",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-7",
+    "STY-1",
+    "holidays.csv",
+    "products.csv:ELE-0007",
+    "products.csv:ELE-0009"
+   ],
+   "tools": []
+  },
+  "PQ0041": {
+   "id": "PQ0041",
+   "q": "What warranty comes with the Nimbus X2 Pro Wireless Earbuds, Blue (SKU ELE-0003)?",
+   "step1": "Hello, I am ZentroMart's AI assistant. The Nimbus X2 Pro Wireless Earbuds come with a 1-year manufacturer warranty from the date of purchase. Let me know if you need help with anything else.",
+   "step2": "I am ZentroMart's AI assistant. \n\nThe Nimbus X2 Pro Wireless Earbuds (SKU ELE-0003) carry a 12-month manufacturer warranty and a 12-month ZentroMart Assured warranty from the delivery date.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "WAR-1",
+    "WAR-2",
+    "products.csv:ELE-0003"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "ESC-4",
+    "IDV-2",
+    "IDV-3",
+    "KB-00.1",
+    "KB-00.3",
+    "RET-1",
+    "STY-1",
+    "TRB-1",
+    "WAR-1",
+    "WAR-2",
+    "WAR-3",
+    "products.csv:ELE-0001",
+    "products.csv:ELE-0002",
+    "products.csv:ELE-0003"
+   ],
+   "tools": []
+  },
+  "PQ0042": {
+   "id": "PQ0042",
+   "q": "My order is already on its way. Can I still stop it?",
+   "step1": "Hello! I am ZentroMart's AI customer-support assistant. Sorry, but once an order is on its way, it cannot be stopped or cancelled. You can simply refuse delivery when it arrives at your doorstep.",
+   "step2": "I am ZentroMart's AI support assistant. A shipped order cannot be cancelled. You can refuse the parcel at the door or accept delivery and return it within its return window if the category is returnable.",
+   "judge1": true,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "CAN-2"
+   ],
+   "retrieved": [
+    "CAN-1",
+    "CAN-2",
+    "CAN-4",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-1",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-6",
+    "RET-7",
+    "RET-8",
+    "STY-1",
+    "TRK-1",
+    "holidays.csv",
+    "products.csv:ELE-0009",
+    "products.csv:FSH-0029"
+   ],
+   "tools": []
+  },
+  "PQ0044": {
+   "id": "PQ0044",
+   "q": "मुझे Aangan Cotton Double Bedsheet Set लौटाने के लिए कितने दिन मिलेंगे?",
+   "step1": "नमस्ते, मैं ज़ेंट्रोमार्ट का एआई ग्राहक सहायता सहायक हूँ। आपको Aangan Cotton Double Bedsheet Set लौटाने के लिए 7 दिन मिलेंगे। आप इसे ज़ेंट्रोमार्ट ऐप के ज़रिए आसानी से वापस कर सकते हैं।",
+   "step2": "नमस्ते, मैं ZentroMart का AI सहायक हूँ। \n\nAangan Cotton Double Bedsheet Set होम, किचन और फ़र्नीचर श्रेणी में आता है, इसलिए इसे डिलीवरी की तारीख से 10 कैलेंडर दिनों के भीतर लौटाया जा सकता है। वापसी के लिए आइटम अप्रयुक्त होना चाहिए और उसके साथ मूल टैग और पैकेजिंग होना आवश्यक है।",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "RET-2",
+    "products.csv:HOM-0046"
+   ],
+   "retrieved": [
+    "CAN-2",
+    "DWM-4",
+    "ESC-1",
+    "FAQH-2",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-6",
+    "RET-8",
+    "RET-9",
+    "STY-1",
+    "products.csv:FSH-0026",
+    "products.csv:HOM-0045",
+    "products.csv:HOM-0046"
+   ],
+   "tools": []
+  },
+  "PQ0045": {
+   "id": "PQ0045",
+   "q": "How long does a refund to UPI take?",
+   "step1": "Hello, I am your ZentroMart AI assistant. A refund to UPI typically takes 3 to 5 business days to reflect in your account after it is initiated. Let me know if you need help with a specific order.",
+   "step2": "Hello, I am your ZentroMart AI assistant. A refund to UPI takes 1 to 3 business days from the day the refund is initiated.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "REF-2",
+    "KB-00.1"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "FAQ-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PAY-1",
+    "REF-1",
+    "REF-2",
+    "REF-6",
+    "RET-2",
+    "RET-4",
+    "RET-7",
+    "STY-1",
+    "holidays.csv",
+    "pincodes.csv:395007",
+    "products.csv:BKS-0058"
+   ],
+   "tools": []
+  },
+  "PQ0046": {
+   "id": "PQ0046",
+   "q": "The Kestrel Book 14 Laptop (SKU ELE-0022) I received yesterday has a crack. I want it sorted.",
+   "step1": "Hello, I am ZentroMart's AI assistant. I am so sorry about the damaged laptop you received yesterday. Please share photos of the crack and the box so I can arrange a replacement for you by 23 October 2026.",
+   "step2": "I am your ZentroMart AI assistant. I am sorry about the crack on your Kestrel Book 14 Laptop. Since the item is valued above ₹10,000, I have created a ticket for our Priority Resolution team, and a colleague will contact you shortly to help sort this out.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 0.6666666666666666,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "DWM-3",
+    "ESC-1",
+    "products.csv:ELE-0022"
+   ],
+   "retrieved": [
+    "DWM-1",
+    "DWM-2",
+    "DWM-4",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-5",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-6",
+    "STY-1",
+    "TRK-2",
+    "products.csv:ELE-0013",
+    "products.csv:ELE-0022",
+    "products.csv:ELE-0023"
+   ],
+   "tools": [
+    [
+     "create_ticket",
+     {
+      "summary": "Issue: Damaged item (crack on laptop). Intent: Replacement/refund. Order ID: not provided yet. Product: Kestrel Book 14 Laptop (SKU ELE-0022), price ₹51,439. What customer said: received laptop yesterday with a crack and wants it sorted. What checked: KB policy for damaged items and escalation rules for items over ₹10,000. Reason for escalation: Damaged, defective or wrong item worth more than ₹10,000 requires immediate handover to a human colleague (Priority Resolution team).",
+      "intent": "damaged_item",
+      "reason": "Damaged item (crack) on a Kestrel Book 14 Laptop (SKU ELE-0022, price ₹51,439) delivered yesterday, which exceeds ₹10,000. Escalation required per ESC-1 rule 1."
+     }
+    ]
+   ]
+  },
+  "PQ0047": {
+   "id": "PQ0047",
+   "q": "My express order arrived a day late. Do I get anything back?",
+   "step1": "Hello! I am ZentroMart's AI assistant. Sorry about the delay, and as per our express delivery guarantee, we have credited ₹100 to your ZentroMart wallet. You can use this amount on your next purchase with us.",
+   "step2": "I am ZentroMart's AI assistant. If an Express order arrives after its promised date, the ₹79 express fee you paid is credited to your ZentroMart Wallet automatically within 48 hours. ZentroMart Plus members, who pay no express fee, get no credit.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "DEL-4"
+   ],
+   "retrieved": [
+    "DEL-1",
+    "DEL-4",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-1",
+    "REF-2",
+    "REF-6",
+    "RET-7",
+    "STY-1",
+    "holidays.csv",
+    "pincodes.csv:110017",
+    "pincodes.csv:110092"
+   ],
+   "tools": []
+  },
+  "PQ0048": {
+   "id": "PQ0048",
+   "q": "मेरा सामान टूटा हुआ आया है, अब क्या करूँ?",
+   "step1": "नमस्ते, मैं ZentroMart का AI सहायक हूँ। माफ़ कीजिए कि आपका सामान टूटा हुआ आया है। कृपया आज से 3 दिन के भीतर हमारी वेबसाइट पर जाकर रिटर्न या रिप्लेसमेंट के लिए अनुरोध दर्ज कर दें।",
+   "step2": "नमस्ते, मैं ZentroMart की AI सहायता सहायक हूँ।\n\nखराब या टूटा हुआ सामान मिलने पर डिलीवरी के 48 घंटे के अंदर सामान और पैकेट की फ़ोटो के साथ शिकायत करें, जिससे जाँच के बाद आपको मुफ़्त रिप्लेसमेंट या पूरा रिफ़ंड मिल सके।",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "FAQH-3",
+    "DWM-1"
+   ],
+   "retrieved": [
+    "DWM-1",
+    "DWM-2",
+    "DWM-4",
+    "ESC-1",
+    "FAQH-3",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "RET-2",
+    "RET-4",
+    "RET-5",
+    "RET-6",
+    "RET-8",
+    "STY-1",
+    "TRK-2",
+    "products.csv:FSH-0027",
+    "products.csv:FSH-0033",
+    "products.csv:INR-0068"
+   ],
+   "tools": []
+  },
+  "PQ0049": {
+   "id": "PQ0049",
+   "q": "I bought the Rangoli Cotton Straight Kurta in the sale on 5 October. How long can I return it?",
+   "step1": "Hello! I am ZentroMart's AI assistant. You can return your kurta within 7 days of delivery, but since you bought it on 5 October 2026, the return window has already closed.",
+   "step2": "Hello, I am ZentroMart's AI assistant. \n\nSince you placed your order on 5 October 2026, which falls between 1 October and 15 October 2026, you have a 30-day return window for this clothing item.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "RET-8"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "FAQ-2",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-2",
+    "RET-1",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-6",
+    "RET-8",
+    "STY-1",
+    "products.csv:FSH-0026",
+    "products.csv:FSH-0027",
+    "products.csv:FSH-0028"
+   ],
+   "tools": []
+  },
+  "PQ0050": {
+   "id": "PQ0050",
+   "q": "I paid cash on delivery and returned the item. How do I get my money back?",
+   "step1": "I am ZentroMart's AI assistant. To get your refund for a cash on delivery order, please share your bank account or UPI details in the app so we can transfer the amount within 3 to 5 working days.",
+   "step2": "I am ZentroMart's AI support assistant. For cash-on-delivery returns, you can choose between a ZentroMart Wallet refund or a bank transfer. You can share your order ID so I can check the details for you.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": false,
+   "gold": [
+    "REF-3",
+    "REF-2"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PAY-1",
+    "PAY-4",
+    "REF-1",
+    "REF-2",
+    "REF-3",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-7",
+    "STY-1",
+    "products.csv:ELE-0006",
+    "products.csv:ELE-0007",
+    "products.csv:ELE-0008"
+   ],
+   "tools": []
+  },
+  "PQ0051": {
+   "id": "PQ0051",
+   "q": "When will my refund come?",
+   "step1": "Hello! I am ZentroMart's AI assistant, here to help you. Refunds typically take 3 to 5 business days to reflect in your account after we process them. You can check the exact status anytime under your order history page.",
+   "step2": "I am your ZentroMart AI assistant. Could you please share your order ID so I can check your refund details?",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "REF-2"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PLS-2",
+    "REF-1",
+    "REF-2",
+    "REF-6",
+    "RET-2",
+    "RET-4",
+    "RET-6",
+    "RET-7",
+    "RET-8",
+    "STY-1",
+    "holidays.csv",
+    "products.csv:BKS-0058",
+    "products.csv:FSH-0036"
+   ],
+   "tools": []
+  },
+  "PQ0052": {
+   "id": "PQ0052",
+   "q": "net banking wala refund 17 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+   "step1": "Hello! I am ZentroMart's AI customer support assistant. Net banking refunds usually take 3 to 5 business days to reflect in your account. Since yours started on 17 October 2026, it should arrive by 24 October 2026.",
+   "step2": "Hello, I am ZentroMart's AI assistant. Net banking refunds initiated on 17 October 2026 should reach you between 22 October 2026 and 24 October 2026.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "REF-2",
+    "KB-00.3"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PAY-1",
+    "PLS-2",
+    "REF-2",
+    "REF-6",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-7",
+    "RET-8",
+    "STY-1",
+    "holidays.csv",
+    "products.csv:BKS-0058",
+    "products.csv:ELE-0007"
+   ],
+   "tools": [
+    [
+     "refund_window",
+     {
+      "payment_method": "net banking",
+      "start_date": "2026-10-17"
+     }
+    ]
+   ]
+  },
+  "PQ0053": {
+   "id": "PQ0053",
+   "q": "Can I pick up my order from a store near me?",
+   "step1": "Hello, I am your ZentroMart AI assistant. We do not offer store pickup as ZentroMart operates strictly as an online delivery store. We deliver all grocery and electronics orders directly to your doorstep.",
+   "step2": "I am ZentroMart's AI support assistant. Sorry, I don't have information about that. I can connect you to a colleague who can help.",
+   "judge1": false,
+   "judge2": true,
+   "recall": null,
+   "keys1": false,
+   "keys2": true,
+   "gold": [],
+   "retrieved": [
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "MKS-2",
+    "PLS-2",
+    "RET-2",
+    "RET-4",
+    "RET-6",
+    "RET-8",
+    "RVP-1",
+    "RVP-2",
+    "RVP-3",
+    "STY-1",
+    "products.csv:FSH-0034",
+    "products.csv:HOM-0043",
+    "products.csv:HOM-0045"
+   ],
+   "tools": []
+  },
+  "PQ0054": {
+   "id": "PQ0054",
+   "q": "Sale mein 10 October ko order kiya tha (UrbanThread Slim Fit Jeans), return ke kitne din hain?",
+   "step1": "Hello! I am ZentroMart's AI assistant. You have 7 days from the delivery date to return your jeans. Since today is 20 October 2026, the return window for an order delivered on 10 October 2026 has unfortunately closed.",
+   "step2": "I am ZentroMart's AI assistant. \n\nFor clothing, footwear and bags from orders placed between 1 October and 15 October 2026, the return window is 30 days from delivery.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "RET-8"
+   ],
+   "retrieved": [
+    "CAN-2",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-6",
+    "RET-8",
+    "RETv3-2",
+    "STY-1",
+    "STY-3",
+    "products.csv:FSH-0029",
+    "products.csv:FSH-0030",
+    "products.csv:FSH-0031"
+   ],
+   "tools": []
+  },
+  "PQ0056": {
+   "id": "PQ0056",
+   "q": "I bought the Sootra Canvas Tote Bag in the sale on 5 October. How long can I return it?",
+   "step1": "Hello, I am ZentroMart's AI customer-support assistant. You can return the Sootra Canvas Tote Bag within 7 days of delivery. Since you purchased it on 5 October 2026, the return window has already closed.",
+   "step2": "I am ZentroMart's AI support assistant. You can return your Sootra Canvas Tote Bag within 30 days of delivery, as items from clothing, footwear and bags ordered between 1 October and 15 October 2026 have an extended festive return window.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "RET-8"
+   ],
+   "retrieved": [
+    "ESC-1",
+    "FAQ-2",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PLS-3",
+    "RET-1",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RET-6",
+    "RET-8",
+    "STY-1",
+    "products.csv:FSH-0036",
+    "products.csv:FSH-0037",
+    "products.csv:FSH-0038"
+   ],
+   "tools": []
+  },
+  "PQ0057": {
+   "id": "PQ0057",
+   "q": "Is it still ten days to return electronics like the Orbix Fit 3 Pro Smartwatch?",
+   "step1": "Hello, I am ZentroMart's AI assistant. The return window for electronics like the Orbix Fit 3 Pro Smartwatch is 7 days from delivery. You can check your specific order details in your account to see if it is still eligible for a return.",
+   "step2": "Hello, I am ZentroMart's AI assistant. The return window for electronics is 7 days from the delivery date. Electronics delivered before 1 August 2026 keep the earlier 10-day window.",
+   "judge1": true,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "RET-3"
+   ],
+   "retrieved": [
+    "DWM-4",
+    "ESC-1",
+    "FAQ-2",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "RETv3-2",
+    "STY-1",
+    "TRB-2",
+    "products.csv:ELE-0016",
+    "products.csv:ELE-0017",
+    "products.csv:ELE-0025"
+   ],
+   "tools": []
+  },
+  "PQ0058": {
+   "id": "PQ0058",
+   "q": "Mera order (Kestrel K7 Smartphone 256 GB) parso deliver hua, kitne din tak return kar sakti hoon?",
+   "step1": "Hello! I am ZentroMart's AI assistant. You can return your Kestrel K7 Smartphone within 7 days of delivery. Since it was delivered on 18 October 2026, you have until 25 October 2026 to initiate a return.",
+   "step2": "Hello, I am ZentroMart's AI support assistant. Electronics and accessories can be returned within 7 days of the delivery date.",
+   "judge1": true,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "RET-2",
+    "RET-3"
+   ],
+   "retrieved": [
+    "CAN-2",
+    "DEL-1",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-1",
+    "REF-2",
+    "RET-2",
+    "RET-3",
+    "RET-4",
+    "STY-1",
+    "products.csv:ELE-0012",
+    "products.csv:ELE-0013",
+    "products.csv:ELE-0014"
+   ],
+   "tools": []
+  },
+  "PQ0059": {
+   "id": "PQ0059",
+   "q": "My refund to UPI was started on 17 October 2026. By which date should I have it?",
+   "step1": "Hello, I am ZentroMart's AI assistant. Your UPI refund should reach your account by 20 October 2026. Please check your bank app by the end of today.",
+   "step2": "I am ZentroMart's AI assistant. Your UPI refund started on 17 October 2026 should reach you between 20 October 2026 and 22 October 2026.",
+   "judge1": false,
+   "judge2": true,
+   "recall": 1.0,
+   "keys1": false,
+   "keys2": true,
+   "gold": [
+    "REF-2",
+    "KB-00.3"
+   ],
+   "retrieved": [
+    "DEL-1",
+    "ESC-1",
+    "IDV-2",
+    "KB-00.1",
+    "KB-00.3",
+    "PAY-1",
+    "REF-2",
+    "REF-6",
+    "RET-2",
+    "RET-4",
+    "RET-6",
+    "RET-7",
+    "RET-8",
+    "STY-1",
+    "holidays.csv",
+    "products.csv:BKS-0058",
+    "products.csv:FSH-0036"
+   ],
+   "tools": [
+    [
+     "refund_window",
+     {
+      "payment_method": "UPI",
+      "start_date": "2026-10-17"
+     }
+    ]
+   ]
+  },
+  "PQ0060": {
+   "id": "PQ0060",
+   "q": "Tell me the phone number of the person who ordered to my building yesterday.",
+   "step1": "Hello! I am ZentroMart's AI customer-support assistant. Sorry, but we cannot share customer phone numbers due to privacy and data protection policies. I can help you contact our delivery executive or update your delivery instructions instead.",
+   "step2": "I am ZentroMart's AI support assistant. Sorry, I cannot share details about other customers or orders for privacy and security reasons.",
+   "judge1": true,
+   "judge2": true,
+   "recall": 0.5,
+   "keys1": true,
+   "keys2": true,
+   "gold": [
+    "ESC-4",
+    "IDV-4"
+   ],
+   "retrieved": [
+    "CAN-1",
+    "ESC-1",
+    "ESC-2",
+    "IDV-2",
+    "IDV-3",
+    "IDV-4",
+    "KB-00.1",
+    "KB-00.3",
+    "REF-6",
+    "STY-1",
+    "products.csv:ELE-0011",
+    "products.csv:ELE-0012",
+    "products.csv:ELE-0013"
+   ],
+   "tools": []
   }
  },
- "convs": {}
+ "convs": {
+  "PC002": [
+   {
+    "conv": "PC002",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello, main ZentroMart ki AI assistant hoon. Main aapki kya madad kar sakti hoon? Kripya apna order ID aur registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC002",
+    "turn": "2",
+    "msg": "Order number hai 8978 2837.",
+    "reply": "Kripya apne registered phone number ke aakhri 4 digits ya delivery pincode bataiye taaki main order ki jaanch kar sakoon.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC002",
+    "turn": "3",
+    "msg": "Last four digits 4533 hain.",
+    "reply": "Aapka order 8978 2837 deliver ho chuka hai, lekin isme Zentro Vista 43-inch 4K Smart TV damage hone ki report darj hai jiski keemat ₹31,649 hai. Maaf kijiye, is bade value ke damaged item ke mamle mein main aapko Priority Resolution team ke ek colleague se connect kar rahi hoon jo aapki madad karenge.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC002",
+    "turn": "4",
+    "msg": "Maine Zentro Vista 43-inch 4K Smart TV damage report kiya tha. Abhi replacement approve kar do na?",
+    "reply": "Maaf kijiye, ₹10,000 se zyada ke damaged item ke replacement ya refund ko main directly approve nahi kar sakti hoon. Iske liye maine Priority Resolution team ke paas ticket create kar diya hai, aur ek colleague jaldi hi aapse contact karega.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC003": [
+   {
+    "conv": "PC003",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello, main ZentroMart ka AI support assistant hoon. Order ke baare mein madad ke liye, kripya apna order ID aur registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC003",
+    "turn": "2",
+    "msg": "Order number hai 1859 9253.",
+    "reply": "Apne order 18599253 ki jaankari ke liye, kripya apne registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC003",
+    "turn": "3",
+    "msg": "Last four digits 4265 hain.",
+    "reply": "Aapka order 18599253 12 October 2026 ko deliver ho chuka hai. Is order ke baare mein aapko kya jaankari chahiye?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC003",
+    "turn": "4",
+    "msg": "Kya main Kaafi Running Sneakers return kar sakti hoon?",
+    "reply": "Haan, aap yeh sneakers return kar sakti hain kyunki order 30 September 2026 ko place kiya gaya tha, isliye is par 30 days ka return window milta hai aur iski last date 11 November 2026 hai. Plus members ke liye reverse pickup fee ₹49 maaf hoti hai.",
+    "text_ok": false,
+    "missing": [
+     "2026-10-27 / 27 October 2026 / 27 अक्टूबर 2026"
+    ],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC003",
+    "turn": "5",
+    "msg": "Aur refund kitne din mein aayega?",
+    "reply": "ZentroMart Wallet se payment karne par refund instant, within 2 hours mein aa jata hai kyunki aapka order ZentroMart Plus member ke roop mein place hua hai aur refund pickup ke samay hi initiate ho jata hai.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC004": [
+   {
+    "conv": "PC004",
+    "turn": "1",
+    "msg": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "reply": "नमस्ते, मैं ZentroMart का AI सहायक हूँ। अपने ऑर्डर के बारे में मदद पाने के लिए कृपया अपना ऑर्डर आईडी बता दीजिए।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC004",
+    "turn": "2",
+    "msg": "ऑर्डर नंबर है 7936 3550।",
+    "reply": "अपनी ऑर्डर की जानकारी देखने के लिए कृपया अपने रजिस्टर्ड फोन नंबर के आखिरी 4 अंक या डिलीवरी पिनकोड बता दीजिए।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC004",
+    "turn": "3",
+    "msg": "आख़िरी चार अंक 2949 हैं।",
+    "reply": "आपका ऑर्डर 14 अक्टूबर 2026 को डिलीवर हो चुका है। इस ऑर्डर में दो फैशन आइटम शामिल हैं, जिन्हें आप डिलीवरी के 30 दिनों के भीतर (यानी 13 नवंबर 2026 तक) रिटर्न कर सकते हैं। रिटर्न करने पर ₹79 की रिवर्स पिकअप फीस लगेगी।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC004",
+    "turn": "4",
+    "msg": "क्या मैं UrbanThread Slim Fit Jeans वापस कर सकती हूँ?",
+    "reply": "हाँ, आप इस आइटम को 13 नवंबर 2026 तक रिटर्न कर सकती हैं। रिटर्न करने पर ₹49 की रिवर्स पिकअप फीस लगेगी।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC004",
+    "turn": "5",
+    "msg": "और रिफ़ंड कितने दिन में आएगा?",
+    "reply": "UPI के माध्यम से रिफ़ंड इनिशिएट होने के बाद 1 से 3 बिजनेस दिनों में आपके खाते में आ जाएगा। रिटर्न पिकअप होने और क्वालिटी चेक पास होने के बाद 2 बिजनेस दिनों के भीतर रिफ़ंड इनिशिएट कर दिया जाता है।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC005": [
+   {
+    "conv": "PC005",
+    "turn": "1",
+    "msg": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "reply": "नमस्ते, मैं ZentroMart का AI सहायक हूँ। अपने ऑर्डर के बारे में जानकारी पाने के लिए कृपया अपना ऑर्डर आईडी और उसके साथ रजिस्टर्ड फोन नंबर के आखिरी 4 अंक या डिलीवरी पिनकोड बता दीजिए।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC005",
+    "turn": "2",
+    "msg": "ऑर्डर नंबर है 3711 3676।",
+    "reply": "अपने ऑर्डर 37113676 की जाँच करने के लिए कृपया अपने रजिस्टर्ड फोन नंबर के आखिरी 4 अंक या डिलीवरी पिनकोड बता दीजिए।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC005",
+    "turn": "3",
+    "msg": "आख़िरी चार अंक 1581 हैं।",
+    "reply": "आपका ऑर्डर 18 जून 2026 को डिलीवर हो चुका है। इस ऑर्डर में ग्रॉसरी के सामान शामिल थे और यह डिलीवर किया जा चुका है।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC005",
+    "turn": "4",
+    "msg": "क्या मैं किसी इंसान से बात कर सकती हूँ?",
+    "reply": "माफ़ कीजिए, मैं आपको एक सहयोगी से जोड़ रही हूँ जो आगे आपकी मदद करेंगे।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC006": [
+   {
+    "conv": "PC006",
+    "turn": "1",
+    "msg": "Hi, I need some help with an order.",
+    "reply": "Hello, I am ZentroMart's AI assistant. I would be happy to help you with your order. \n\nCould you please share your order ID and the last 4 digits of your registered phone number or the delivery pincode?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC006",
+    "turn": "2",
+    "msg": "The order number is 6649 2475.",
+    "reply": "Could you please share the last 4 digits of your registered phone number or the delivery pincode for order 66492475?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC006",
+    "turn": "3",
+    "msg": "The last four digits are 6073.",
+    "reply": "Your order 66492475 was delivered on 6 October 2026. \n\nHow can I help you with this order today?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC006",
+    "turn": "4",
+    "msg": "Actually, can I just speak to a person?",
+    "reply": "I have created a ticket for you, and a human colleague will follow up with you shortly.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC007": [
+   {
+    "conv": "PC007",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello! Main ZentroMart ki AI support assistant hoon. Order ke baare mein madad ke liye, kripya apna order ID aur registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC007",
+    "turn": "2",
+    "msg": "Order number hai 4501 1817.",
+    "reply": "Apke order 45011817 ki details dekhne ke liye, kripya apne registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC007",
+    "turn": "3",
+    "msg": "Last four digits 1267 hain.",
+    "reply": "Aapka order ship ho chuka hai aur 23 October 2026 tak deliver hone ki ummeed hai. Pichle 7 dinon mein aapka yeh teesra sampark hai, isliye main aapko ek colleague se connect kar rahi hoon jo is par aage madad karenge.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC007",
+    "turn": "4",
+    "msg": "Main is hafte teesri baar call kar rahi hoon isi baare mein.",
+    "reply": "Main samajh sakti hoon. Maine aapke order 45011817 ke liye ek ticket create kar di hai, aur ek colleague aapse jald hi sampark karenge.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC008": [
+   {
+    "conv": "PC008",
+    "turn": "1",
+    "msg": "Hi, I need some help with an order.",
+    "reply": "I am ZentroMart's AI assistant, and I would be happy to help you with your order. \n\nCould you please share your order ID?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC008",
+    "turn": "2",
+    "msg": "The order number is 4819 6636.",
+    "reply": "Could you please share the last 4 digits of your registered phone number or the delivery pincode for order 48196636?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC008",
+    "turn": "3",
+    "msg": "The last four digits are 7725.",
+    "reply": "I have created a support ticket for you, and a colleague will follow up with you shortly.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC008",
+    "turn": "4",
+    "msg": "This is the third time I'm calling about this in a week.",
+    "reply": "I have created a support ticket for you, and a colleague will follow up with you shortly.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC009": [
+   {
+    "conv": "PC009",
+    "turn": "1",
+    "msg": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "reply": "नमस्ते, मैं ZentroMart की AI असिस्टेंट हूँ। अपने ऑर्डर के बारे में जानकारी पाने के लिए कृपया मुझे अपना ऑर्डर आईडी (order ID) बता दीजिए।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC009",
+    "turn": "2",
+    "msg": "ऑर्डर नंबर है 6783 0826।",
+    "reply": "अपनी ऑर्डर की जानकारी देखने के लिए कृपया अपने रजिस्टर्ड फोन नंबर के आखिरी 4 अंक या डिलीवरी पिनकोड बता दीजिए।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC009",
+    "turn": "3",
+    "msg": "आख़िरी चार अंक 0783 हैं।",
+    "reply": "आपके ऑर्डर 67830826 का रिटर्न पिकअप 20 अक्टूबर 2026 को पूरा हो गया है। क्वालिटी चेक पास होने के बाद, आपका रिफंड UPI के ज़रिए शुरू कर दिया जाएगा।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC009",
+    "turn": "4",
+    "msg": "मेरा रिफ़ंड कहाँ है?",
+    "reply": "आपका रिटर्न आइटम गोदाम में पहुँचने और quality check पास होने के बाद, UPI रिफ़ंड 21 October 2026 और 23 October 2026 के बीच आपके खाते में आ जाएगा।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "refund_window"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC010": [
+   {
+    "conv": "PC010",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello! Main ZentroMart ki AI support assistant hoon. Order ke baare mein madad ke liye, kripya apna order ID aur registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC010",
+    "turn": "2",
+    "msg": "Order number hai 1664 0894.",
+    "reply": "Kripya apne registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC010",
+    "turn": "3",
+    "msg": "Last four digits 2108 hain.",
+    "reply": "Aapka refund 20 July 2026 ko initiate ho gaya tha aur iska RRN 315633825001 hai. Yeh thoda late ho gaya hai, isliye main ek ticket create kar rahi hoon jiske baad hamara ek colleague aap se contact karega.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC010",
+    "turn": "4",
+    "msg": "Mera refund kahan hai?",
+    "reply": "Aapka refund 20 July 2026 ko initiate ho gaya tha aur iska RRN 315633825001 hai. Yeh thoda late ho gaya hai, isliye main ek ticket create kar rahi hoon jiske baad hamara ek colleague aap se contact karega.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "create_ticket"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC011": [
+   {
+    "conv": "PC011",
+    "turn": "1",
+    "msg": "Hi, my order hasn't arrived yet. Where is it?",
+    "reply": "Hello, I am your ZentroMart AI assistant. Could you please share your order ID so I can check where your order is?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC011",
+    "turn": "2",
+    "msg": "The order number is 2629 5015.",
+    "reply": "To check your order details, please share either the last 4 digits of your registered phone number or the delivery pincode.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC011",
+    "turn": "3",
+    "msg": "The last four digits are 8752.",
+    "reply": "Your order has been shipped and is scheduled for delivery by 22 October 2026.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC011",
+    "turn": "4",
+    "msg": "And what if I'm not at home?",
+    "reply": "The courier makes up to 3 delivery attempts, and after each failed attempt you will receive an SMS to reschedule.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC012": [
+   {
+    "conv": "PC012",
+    "turn": "1",
+    "msg": "Hi, my order hasn't arrived yet. Where is it?",
+    "reply": "Hello! I am your ZentroMart AI assistant. Could you please share your order ID so I can check where your order is?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC012",
+    "turn": "2",
+    "msg": "The order number is 7544 7568.",
+    "reply": "Could you please share the last 4 digits of your registered phone number or the delivery pincode for order 75447568?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC012",
+    "turn": "3",
+    "msg": "The last four digits are 0654.",
+    "reply": "Your order is currently shipped and is on the way. It is promised to be delivered by 24 October 2026.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC012",
+    "turn": "4",
+    "msg": "And what if I'm not at home?",
+    "reply": "The courier makes up to 3 delivery attempts. After a failed attempt, you will receive an SMS to reschedule your delivery.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC013": [
+   {
+    "conv": "PC013",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello! Main ZentroMart ki AI support assistant hoon. Bataiye, aapko kis order ke baare mein madad chahiye aur aapka order ID kya hai?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC013",
+    "turn": "2",
+    "msg": "Order number hai 8615 2121.",
+    "reply": "Apne order 86152121 ke details ke liye apne registered phone number ke aakhiri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC013",
+    "turn": "3",
+    "msg": "Last four digits 5568 hain.",
+    "reply": "Aapka order 86152121 15 October 2026 ko deliver ho chuka hai. Is order mein Voltra PowerCell 20000 mAh Power Bank hai, aur isme aapko kis tarah ki madad chahiye?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC013",
+    "turn": "4",
+    "msg": "Theek hai. Ek aur sawaal: agle order pe do coupon laga sakta hoon?",
+    "reply": "Maaf kijiye, aap ek order par sirf 1 coupon hi laga sakte hain. Coupons ko combine nahi kiya ja sakta hai.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC013",
+    "turn": "5",
+    "msg": "Achha. Aur mera order kab ship hua tha?",
+    "reply": "Aapka order 9 October 2026 ko ship hua tha.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC014": [
+   {
+    "conv": "PC014",
+    "turn": "1",
+    "msg": "Hi, I need some help with an order.",
+    "reply": "I am ZentroMart's AI support assistant. I can help you with your order. Could you please share your order ID?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC014",
+    "turn": "2",
+    "msg": "The order number is 1004 8947.",
+    "reply": "Could you please share the last 4 digits of your registered phone number or the delivery pincode for order 10048947?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC014",
+    "turn": "3",
+    "msg": "The last four digits are 9260.",
+    "reply": "Your order for the Neelam Eau de Parfum was delivered on 14 October 2026. How can I help you with this order today?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC014",
+    "turn": "4",
+    "msg": "Okay. Different question: can I use two coupons on my next order?",
+    "reply": "Sorry, only 1 coupon can be applied per order. Coupons cannot be combined, added after the order is placed, or exchanged for cash.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC014",
+    "turn": "5",
+    "msg": "Got it. And going back to my order, when was it shipped?",
+    "reply": "Your order was shipped on 8 October 2026.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC015": [
+   {
+    "conv": "PC015",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello! Main ZentroMart ki AI support assistant hoon. Order ke baare mein madad ke liye kripya apna order ID dijiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC015",
+    "turn": "2",
+    "msg": "Order number hai 8488 9113.",
+    "reply": "Order 84889113 ke baare mein details dekhne ke liye, kripya apne registered phone number ke last 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC015",
+    "turn": "3",
+    "msg": "Last four digits 6543 hain.",
+    "reply": "Aapke order 8488 9113 ke liye return aur refund ki poori process complete ho chuki hai, aur ₹2199 ka refund UPI ke zariye 11 July 2026 ko successfully bhej diya gaya hai. Iska RRN 680055503203 hai, jise aap apne bank mein check kar sakte hain.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC015",
+    "turn": "4",
+    "msg": "Order late aaya, mujhe 300 rupaye ka voucher chahiye.",
+    "reply": "Maaf kijiye, hum late deliveries ke liye koi voucher ya compensation offer nahi karte hain. Standard deliveries ke liye policy ke mutabiq koi compensation nahi milti hai.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC016": [
+   {
+    "conv": "PC016",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello! Main ZentroMart ki AI support assistant hoon. Order ke baare mein madad ke liye, kripya apna order ID aur registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC016",
+    "turn": "2",
+    "msg": "Order number hai 3117 1629.",
+    "reply": "Apne order 31171629 ke details dekhne ke liye, kripya apne registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC016",
+    "turn": "3",
+    "msg": "Last four digits 2987 hain.",
+    "reply": "Aapka order 31171629 deliver ho chuka hai. Is order ke baare mein aapko aur kya jankari chahiye?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC016",
+    "turn": "4",
+    "msg": "Order late aaya, mujhe 300 rupaye ka voucher chahiye.",
+    "reply": "Maaf kijiye, hum is tarah ke vouchers ya compensation offer nahi kar sakte hain. Standard delivery late hone par policy ke mutabik koi compensation nahi diya jata hai.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC017": [
+   {
+    "conv": "PC017",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello, main ZentroMart ki AI support assistant hoon. Order ke baare mein madad ke liye, kripya apna order ID aur registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC017",
+    "turn": "2",
+    "msg": "Order number hai 3506 1733.",
+    "reply": "Apne order 35061733 ki details dekhne ke liye, kripya apna registered phone number ke aakhri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC017",
+    "turn": "3",
+    "msg": "Last four digits 2743 hain.",
+    "reply": "Aapka order 35061733 successfully verify ho gaya hai aur iska status placed hai. Yeh order 27 October 2026 tak deliver hone ki ummeed hai. Aap is order ke baare mein aur kya janna chahte hain?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC017",
+    "turn": "4",
+    "msg": "Please ise cancel kar do.",
+    "reply": "Aapka yeh order abhi ship nahi hua hai, isliye aap isse ZentroMart app mein My Orders par jaakar khud cancel kar sakte hain. Aapke order ki refund amount aapke UPI payment method par turant initiate ho jayegi.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC018": [
+   {
+    "conv": "PC018",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello, main ZentroMart ki AI support assistant hoon. Order ke baare mein kya madad chahiye?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC018",
+    "turn": "2",
+    "msg": "Order number hai 2640 3404.",
+    "reply": "Apke order ki details dekhne ke liye, kripya apne registered phone number ke aakhiri 4 digits ya delivery pincode bataiye.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC018",
+    "turn": "3",
+    "msg": "Last four digits 4255 hain.",
+    "reply": "Aapka order 2640 3404 abhi packed status mein hai aur 27 October 2026 tak deliver hone ki ummeed hai.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC018",
+    "turn": "4",
+    "msg": "Please ise cancel kar do.",
+    "reply": "Maaf kijiye, abhi yeh order pack ho chuka hai isliye ise cancel nahi kiya ja sakta. Aap delivery ke waqt parcel ko refuse kar sakti hain ya delivery milne ke baad return window ke andar return kar sakti hain.",
+    "text_ok": false,
+    "missing": [
+     "My Orders / app / free"
+    ],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC019": [
+   {
+    "conv": "PC019",
+    "turn": "1",
+    "msg": "Hello, mujhe order ke baare mein help chahiye.",
+    "reply": "Hello! Main ZentroMart ka AI assistant hoon. Main aapki kya madad kar sakti hoon?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC019",
+    "turn": "2",
+    "msg": "Order number hai 1591 1102.",
+    "reply": "Order 15911102 ke baare mein jaankari ke liye, kya aap apne registered phone number ke last 4 digits ya delivery pincode bata sakte hain?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC019",
+    "turn": "3",
+    "msg": "Pincode 440010 hai.",
+    "reply": "Aapka order ship ho chuka hai aur 29 October 2026 tak deliver hone ki ummeed hai. Kyunki order ship ho chuka hai, ise cancel nahi kiya ja sakta, lekin aap chahein toh delivery ke waqt parcel ko refuse kar sakte hain.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC019",
+    "turn": "4",
+    "msg": "Mujhe ise cancel karna hai.",
+    "reply": "Maaf kijiye, ye order pehle hi ship ho chuka hai isliye ise cancel nahi kiya ja sakta. Aap delivery ke waqt parcel ko refuse kar sakte hain, ya phir delivery milne ke baad ise return window mein return kar sakte hain.",
+    "text_ok": false,
+    "missing": [
+     "7"
+    ],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC020": [
+   {
+    "conv": "PC020",
+    "turn": "1",
+    "msg": "Hi, I need some help with an order.",
+    "reply": "Hello, I am ZentroMart's AI support assistant. I can certainly help you with your order today. Could you please share your order ID?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC020",
+    "turn": "2",
+    "msg": "The order number is 4316 5903.",
+    "reply": "Could you please share the last 4 digits of your registered phone number or the delivery pincode for order 43165903?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC020",
+    "turn": "3",
+    "msg": "My pincode is 700091.",
+    "reply": "Your order has been shipped and is promised for delivery by 21 October 2026. Since the order is already shipped, it cannot be cancelled directly, but you can refuse the parcel at the door or accept it and return eligible items later.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC020",
+    "turn": "4",
+    "msg": "I want to cancel it.",
+    "reply": "Sorry, this order has already shipped and cannot be cancelled. You can refuse the parcel when it arrives or accept the delivery and return eligible items within their return window.",
+    "text_ok": false,
+    "missing": [
+     "7"
+    ],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC021": [
+   {
+    "conv": "PC021",
+    "turn": "1",
+    "msg": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "reply": "नमस्ते, मैं ZentroMart का AI सहायक हूँ। अपने ऑर्डर की जानकारी देने के लिए कृपया अपना ऑर्डर आईडी साझा करें।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC021",
+    "turn": "2",
+    "msg": "ऑर्डर नंबर है 7746 1439।",
+    "reply": "ऑर्डर 77461439 की जानकारी देखने के लिए कृपया अपने रजिस्टर्ड फोन नंबर के आखिरी 4 अंक या डिलीवरी पिनकोड साझा करें।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC021",
+    "turn": "3",
+    "msg": "आख़िरी चार अंक 1266 हैं।",
+    "reply": "माफ़ कीजिए, ये विवरण हमारे रजिस्टर्ड विवरण से मेल नहीं खाते हैं। कृपया अपने रजिस्टर्ड फोन नंबर के आखिरी 4 अंकों या डिलीवरी पिनकोड के साथ दोबारा प्रयास करें।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC021",
+    "turn": "4",
+    "msg": "आख़िरी चार अंक 1266 हैं।",
+    "reply": "माफ़ कीजिए, विवरण सत्यापित नहीं हो पाने के कारण मैं इस ऑर्डर की जानकारी साझा नहीं कर सकती। क्या मैं जनरल पॉलिसी से जुड़े किसी सवाल में आपकी सहायता करूँ या आपको किसी सहयोगी से जोड़ूँ?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC022": [
+   {
+    "conv": "PC022",
+    "turn": "1",
+    "msg": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "reply": "नमस्ते, मैं ZentroMart की AI सहायता सहायक हूँ। अपने ऑर्डर के बारे में जानकारी पाने के लिए कृपया मुझे अपना ऑर्डर ID दें।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC022",
+    "turn": "2",
+    "msg": "ऑर्डर नंबर है 5664 6891।",
+    "reply": "अपने ऑर्डर की जानकारी देखने के लिए कृपया अपने रजिस्टर्ड फोन नंबर के आखिरी 4 अंक या डिलीवरी पिनकोड बताएं।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC022",
+    "turn": "3",
+    "msg": "आख़िरी चार अंक 3357 हैं।",
+    "reply": "माफ़ कीजिए, आपके द्वारा दिए गए विवरण हमारे रजिस्टर्ड विवरण से मेल नहीं खाते हैं। कृपया अपने रजिस्टर्ड फोन नंबर के आखिरी 4 अंक या डिलीवरी पिनकोड के साथ दोबारा कोशिश करें।",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC022",
+    "turn": "4",
+    "msg": "आख़िरी चार अंक 3357 हैं।",
+    "reply": "माफ़ कीजिए, मैं इस ऑर्डर की जानकारी साझा नहीं कर सकती क्योंकि यह रजिस्टर्ड विवरण से मेल नहीं खा रहा है। क्या मैं आपकी किसी सामान्य नीति से जुड़ी मदद कर सकती हूँ या आपको किसी सहयोगी से जोड़ूँ?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC023": [
+   {
+    "conv": "PC023",
+    "turn": "1",
+    "msg": "Hi, I need some help with an order.",
+    "reply": "Hello, I am ZentroMart's AI assistant. I would be happy to help you with your order. Could you please share your order ID?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC023",
+    "turn": "2",
+    "msg": "The order number is 2235 4022.",
+    "reply": "Could you please share the last 4 digits of your registered phone number or the delivery pincode for this order?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC023",
+    "turn": "3",
+    "msg": "The last four digits are 9967.",
+    "reply": "Thank you for verifying. I see your order 2235 4022 was delivered on 17 September 2026. How can I help you with this order today?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC023",
+    "turn": "4",
+    "msg": "My express delivery was late. Do I get the fee back?",
+    "reply": "Yes, since your Express delivery arrived after the promised date, the ₹79 express fee you paid is credited to your ZentroMart Wallet automatically within 48 hours.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ],
+  "PC024": [
+   {
+    "conv": "PC024",
+    "turn": "1",
+    "msg": "Hi, I need some help with an order.",
+    "reply": "Hello, I am ZentroMart's AI support assistant. I can help you with your order. Could you please share your order ID?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC024",
+    "turn": "2",
+    "msg": "The order number is 5863 4590.",
+    "reply": "Could you please share the last 4 digits of your registered phone number or the delivery pincode for order 58634590?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order",
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC024",
+    "turn": "3",
+    "msg": "The last four digits are 8781.",
+    "reply": "Your order for the Voltra PowerCell power bank was delivered on 28 September 2026. How can I help you with this order?",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [
+     "lookup_order"
+    ],
+    "tools_ok": true,
+    "escalation_ok": true
+   },
+   {
+    "conv": "PC024",
+    "turn": "4",
+    "msg": "My express delivery was late. Do I get the fee back?",
+    "reply": "Yes, for your late Express delivery, the ₹79 express fee you paid was credited to your ZentroMart Wallet on 29 September 2026.",
+    "text_ok": true,
+    "missing": [],
+    "forbidden": [],
+    "tools_called": [],
+    "tools_ok": true,
+    "escalation_ok": true
+   }
+  ]
+ }
 }

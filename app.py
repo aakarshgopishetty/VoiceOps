@@ -22,7 +22,8 @@ def turn(audio_path, agent, history):
     reply = agent.respond(heard) if heard.strip() else REPROMPT["en"]
     out = Path(tempfile.mkdtemp()) / "reply.wav"
     voice.speak(reply, out)
-    history = history + [(heard or "(unclear audio)", reply)]
+    history = history + [{"role": "user", "content": heard or "(unclear audio)"},
+                         {"role": "assistant", "content": reply}]
     sources = ", ".join(c["id"] for c in agent.last_chunks) if heard.strip() else ""
     return agent, history, str(out), history, sources
 
@@ -31,7 +32,10 @@ with gr.Blocks(title="ZentroMart voice support") as demo:
     gr.Markdown("## ZentroMart support - press record, speak, stop, then submit")
     st, hist = gr.State(None), gr.State([])
     mic = gr.Audio(sources=["microphone"], type="filepath", label="Your voice")
-    chat = gr.Chatbot(label="Conversation")
+    try:
+        chat = gr.Chatbot(label="Conversation", type="messages")  # Gradio 5
+    except TypeError:
+        chat = gr.Chatbot(label="Conversation")  # Gradio 6+: messages is the only format
     speech = gr.Audio(label="Agent reply", autoplay=True)
     src = gr.Textbox(label="Document chunks used", interactive=False)
     mic.stop_recording(turn, [mic, st, hist], [st, hist, speech, chat, src])
