@@ -5,7 +5,7 @@
     "doc_type": "policy",
     "status": "current",
     "effective_from": "2026-08-01",
-    "score": 0.7401,
+    "score": 0.7417,
     "text": "[RET-2] Return windows by category\nThe return window starts on the **delivery date** and is counted in calendar days. The category of every product is listed in the `return_category` column of the product catalog.\n\n| Category | Return window | Catalog code |\n| --- | --- | --- |\n| Electronics and accessories | 7 days | `electronics` |\n| Clothing, footwear and bags | 15 days | `fashion` |\n| Home, kitchen and furniture | 10 days | `home_kitchen` |\n| Beauty and personal care (unopened, seal intact) | 7 days | `beauty_sealed` |\n| Books and stationery | 10 days | `books_media` |\n| Grocery, fresh and perishables | Not returnable | `grocery` |\n| Innerwear, lingerie and swimwear | Not returnable | `innerwear` |\n| Gift cards and digital codes | Not returnable | `digital` |"
   },
   {
@@ -14,7 +14,7 @@
     "doc_type": "policy",
     "status": "current",
     "effective_from": "2026-08-01",
-    "score": 0.7251,
+    "score": 0.7267,
     "text": "[RET-3] Change to electronics returns\nFrom **1 August 2026**, the return window for electronics and accessories is 7 days. Electronics **delivered before 1 August 2026** keep the earlier 10-day window from version 3 of this policy."
   },
   {
@@ -23,7 +23,7 @@
     "doc_type": "policy",
     "status": "current",
     "effective_from": "2026-06-15",
-    "score": 0.6095,
+    "score": 0.6153,
     "text": "[REF-2] How long refunds take after initiation\nRefunds go back to the original payment method. Timelines are counted in business days from the day the refund is initiated.\n\n| Payment method | Time to reach you |\n| --- | --- |\n| UPI | 1 to 3 business days |\n| Credit or debit card | 5 to 7 business days |\n| Net banking | 3 to 5 business days |\n| ZentroMart Wallet | Instant, within 2 hours |\n| Bank transfer (NEFT) for cash-on-delivery orders | 5 to 7 business days |\n| ZentroMart Wallet for cash-on-delivery orders | Instant, within 2 hours |"
   },
   {
@@ -32,8 +32,17 @@
     "doc_type": "policy",
     "status": "current",
     "effective_from": "2026-08-01",
-    "score": 0.5415,
+    "score": 0.5446,
     "text": "[RET-7] After pickup\nReturned items go through a quality check (QC) at the warehouse. The refund is initiated within 2 business days of pickup once the item passes QC. For ZentroMart Plus members, the refund is initiated at the time of pickup. Refund timelines after initiation are in the Refunds policy."
+  },
+  {
+    "id": "RET-8",
+    "title": "Returns policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.4686,
+    "text": "[RET-8] Festive sale returns\nClothing, footwear and bags from orders **placed between 01 October and 15 October 2026** can be returned within 30 days of delivery. All other categories follow the normal windows in RET-2."
   },
   {
     "id": "RETv3-2",
@@ -43,15 +52,6 @@
     "effective_from": "2026-03-01",
     "score": 0.4675,
     "text": "[RETv3-2] Return windows by category\n| Category | Return window |\n| --- | --- |\n| Electronics and accessories | 10 days |\n| Clothing, footwear and bags | 15 days |\n| Home, kitchen and furniture | 10 days |\n| Beauty and personal care (unopened) | 7 days |\n| Books and stationery | 10 days |\n| Grocery, innerwear, gift cards | Not returnable |"
-  },
-  {
-    "id": "DEL-1",
-    "title": "Delivery and shipping policy",
-    "doc_type": "policy",
-    "status": "current",
-    "effective_from": "2026-04-01",
-    "score": 0.4369,
-    "text": "[DEL-1] Delivery times\n| Delivery type | Metro cities | Other locations |\n| --- | --- | --- |\n| Standard | 3 to 6 business days | 5 to 9 business days |\n| Express (selected pincodes) | Next business day if ordered before 2 pm, otherwise the business day after | Not available |\n\nEach order shows a promised delivery date at checkout. That date is the commitment."
   },
   {
     "id": "products.csv:FSH-0036",
@@ -97,15 +97,6 @@
     "effective_from": "2026-08-01",
     "score": 0.0,
     "text": "[RET-6] Reverse pickup and fees\nReturns are collected from the delivery address through reverse pickup. A reverse pickup fee of ₹49 applies to change-of-mind returns of clothing, footwear and bags. The fee is waived for ZentroMart Plus members and for any item returned because it was damaged, defective or wrong."
-  },
-  {
-    "id": "RET-8",
-    "title": "Returns policy",
-    "doc_type": "policy",
-    "status": "current",
-    "effective_from": "2026-08-01",
-    "score": 0.0,
-    "text": "[RET-8] Festive sale returns\nClothing, footwear and bags from orders **placed between 01 October and 15 October 2026** can be returned within 30 days of delivery. All other categories follow the normal windows in RET-2."
   },
   {
     "id": "KB-00.1",

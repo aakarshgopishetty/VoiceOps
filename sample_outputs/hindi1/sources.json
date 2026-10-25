@@ -14,17 +14,8 @@
     "doc_type": "policy",
     "status": "current",
     "effective_from": "2026-08-01",
-    "score": 0.7284,
+    "score": 0.7187,
     "text": "[RET-7] After pickup\nReturned items go through a quality check (QC) at the warehouse. The refund is initiated within 2 business days of pickup once the item passes QC. For ZentroMart Plus members, the refund is initiated at the time of pickup. Refund timelines after initiation are in the Refunds policy."
-  },
-  {
-    "id": "REF-1",
-    "title": "Refunds policy",
-    "doc_type": "policy",
-    "status": "current",
-    "effective_from": "2026-06-15",
-    "score": 0.4767,
-    "text": "[REF-1] When a refund is initiated\n- **Cancelled before shipping:** immediately on cancellation.\n- **Returned item:** after the item passes quality check, within 2 business days of pickup. ZentroMart Plus members: at pickup.\n- **Prepaid order refused at the door or not delivered after 3 attempts:** once the parcel reaches the warehouse, usually 7 to 10 calendar days after the last delivery attempt."
   },
   {
     "id": "ESC-1",
@@ -32,8 +23,17 @@
     "doc_type": "agent_guide",
     "status": "current",
     "effective_from": "2026-07-01",
-    "score": 0.4472,
+    "score": 0.4561,
     "text": "[ESC-1] When to hand over to a human\nHand over at once when any of these is true:\n\n1. **Damaged, defective or wrong item worth more than ₹10,000.**\n2. **Customer reports an order, payment or account activity they did not make.**\n3. **Customer mentions legal action, a consumer court or a police complaint.**\n4. **Third or later contact about the same issue within 7 days.**\n5. **Refund more than 3 business days past its maximum timeline.**\n6. **Customer asks for a human agent.**\n7. **Product safety risk such as a swelling battery, burning smell, sparks or injury.**\n\nFor the repeat-contact rule, use the `contacts_last_7_days` field returned by order lookup. It counts earlier contacts only, not the current one. Escalate when it is 2 or more."
+  },
+  {
+    "id": "REF-1",
+    "title": "Refunds policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-06-15",
+    "score": 0.4497,
+    "text": "[REF-1] When a refund is initiated\n- **Cancelled before shipping:** immediately on cancellation.\n- **Returned item:** after the item passes quality check, within 2 business days of pickup. ZentroMart Plus members: at pickup.\n- **Prepaid order refused at the door or not delivered after 3 attempts:** once the parcel reaches the warehouse, usually 7 to 10 calendar days after the last delivery attempt."
   },
   {
     "id": "REF-6",
@@ -41,17 +41,17 @@
     "doc_type": "policy",
     "status": "current",
     "effective_from": "2026-06-15",
-    "score": 0.4293,
+    "score": 0.4403,
     "text": "[REF-6] Refund reference number\nEvery initiated refund has a refund reference number (RRN) that the customer's bank can trace. Share it when a customer says the money has not arrived."
   },
   {
-    "id": "DEL-1",
-    "title": "Delivery and shipping policy",
+    "id": "PLS-2",
+    "title": "ZentroMart Plus membership",
     "doc_type": "policy",
     "status": "current",
-    "effective_from": "2026-04-01",
-    "score": 0.3865,
-    "text": "[DEL-1] Delivery times\n| Delivery type | Metro cities | Other locations |\n| --- | --- | --- |\n| Standard | 3 to 6 business days | 5 to 9 business days |\n| Express (selected pincodes) | Next business day if ordered before 2 pm, otherwise the business day after | Not available |\n\nEach order shows a promised delivery date at checkout. That date is the commitment."
+    "effective_from": "2026-01-01",
+    "score": 0.3728,
+    "text": "[PLS-2] Benefits\n- Free Express delivery where Express is available.\n- No reverse pickup fee on any return.\n- Refunds on returns are initiated at pickup, without waiting for quality check.\n\nZentroMart Plus does **not** change return windows, return eligibility or refund timelines after initiation."
   },
   {
     "id": "products.csv:BKS-0058",
@@ -59,7 +59,7 @@
     "doc_type": "data",
     "status": "current",
     "effective_from": "",
-    "score": 0.1742,
+    "score": 0.141,
     "text": "sku=BKS-0058; title=Pagecraft Guide: Learn Python in 30 Days; brand=Pagecraft; return_category=books_media; price_inr=789; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=Pagecraft Guide: Learn Python in 30 Days. Sold on ZentroMart."
   },
   {
@@ -68,7 +68,7 @@
     "doc_type": "data",
     "status": "current",
     "effective_from": "",
-    "score": 0.0946,
+    "score": 0.0975,
     "text": "Holidays skipped in business-day counts: 2026-08-15 Independence Day; 2026-10-02 Gandhi Jayanti; 2026-10-19 Warehouse closure (festival); 2026-11-09 Warehouse closure (festival)"
   },
   {
@@ -77,7 +77,7 @@
     "doc_type": "data",
     "status": "current",
     "effective_from": "",
-    "score": 0.0291,
+    "score": 0.0305,
     "text": "sku=FSH-0036; title=Sootra Linen Shirt, Maroon; brand=Sootra; return_category=fashion; price_inr=1019; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=Sootra Linen Shirt, Maroon. Sold on ZentroMart."
   },
   {

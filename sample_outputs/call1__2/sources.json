@@ -1,57 +1,75 @@
 [
   {
-    "id": "IDV-2",
-    "title": "Verifying the customer",
-    "doc_type": "agent_guide",
-    "status": "current",
-    "effective_from": "2026-07-01",
-    "score": 0.8157,
-    "text": "[IDV-2] How to verify\nAsk for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order. Compare with the `phone_last4` or `delivery_pincode` fields from order lookup."
-  },
-  {
-    "id": "TRK-1",
-    "title": "Tracking your order",
-    "doc_type": "help",
-    "status": "current",
-    "effective_from": "2026-02-01",
-    "score": 0.6504,
-    "text": "[TRK-1] Order statuses\n| Status shown | What it means |\n| --- | --- |\n| Placed | Payment confirmed, waiting to be packed |\n| Packed | Packed at the warehouse, waiting for courier pickup |\n| Shipped | With the courier, on the way |\n| Out for delivery | With the delivery executive today |\n| Delivery attempted | The courier could not deliver; see DEL-3 |\n| Delivered | Handed over at the address |\n| Returned to origin (RTO) | Could not be delivered and is going back to the warehouse; prepaid refunds follow REF-1 |\n| Cancelled | Cancelled before shipping |"
-  },
-  {
-    "id": "STY-3",
-    "title": "Conversation style",
-    "doc_type": "agent_guide",
-    "status": "current",
-    "effective_from": "2026-07-01",
-    "score": 0.5484,
-    "text": "[STY-3] Voice replies\nWhen replying by voice, keep it to two or three short sentences. Say dates with the month name (\"the 24th of October\"), read order IDs in groups of four digits, and say amounts in rupees (\"forty-nine rupees\")."
-  },
-  {
-    "id": "TRK-2",
-    "title": "Tracking your order",
-    "doc_type": "help",
-    "status": "current",
-    "effective_from": "2026-02-01",
-    "score": 0.4793,
-    "text": "[TRK-2] Delivered but not received\nIf an order shows Delivered but the customer has not received it, check with family, neighbours or the building security, then report it within 48 hours as a missing item under DWM-1."
-  },
-  {
-    "id": "REF-5",
+    "id": "REF-2",
     "title": "Refunds policy",
     "doc_type": "policy",
     "status": "current",
     "effective_from": "2026-06-15",
-    "score": 0.3962,
-    "text": "[REF-5] Delivery and COD fees\nDelivery fees and the ₹25 cash-on-delivery fee are refunded only when the whole order is cancelled before shipping or returned because it was damaged, defective or wrong."
+    "score": 0.85,
+    "text": "[REF-2] How long refunds take after initiation\nRefunds go back to the original payment method. Timelines are counted in business days from the day the refund is initiated.\n\n| Payment method | Time to reach you |\n| --- | --- |\n| UPI | 1 to 3 business days |\n| Credit or debit card | 5 to 7 business days |\n| Net banking | 3 to 5 business days |\n| ZentroMart Wallet | Instant, within 2 hours |\n| Bank transfer (NEFT) for cash-on-delivery orders | 5 to 7 business days |\n| ZentroMart Wallet for cash-on-delivery orders | Instant, within 2 hours |"
   },
   {
-    "id": "DEL-6",
-    "title": "Delivery and shipping policy",
+    "id": "RET-7",
+    "title": "Returns policy",
     "doc_type": "policy",
     "status": "current",
-    "effective_from": "2026-04-01",
-    "score": 0.3808,
-    "text": "[DEL-6] Changing the address\nThe delivery address can be changed before the order ships. After shipping, the address cannot be changed."
+    "effective_from": "2026-08-01",
+    "score": 0.7303,
+    "text": "[RET-7] After pickup\nReturned items go through a quality check (QC) at the warehouse. The refund is initiated within 2 business days of pickup once the item passes QC. For ZentroMart Plus members, the refund is initiated at the time of pickup. Refund timelines after initiation are in the Refunds policy."
+  },
+  {
+    "id": "PLS-2",
+    "title": "ZentroMart Plus membership",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-01-01",
+    "score": 0.5852,
+    "text": "[PLS-2] Benefits\n- Free Express delivery where Express is available.\n- No reverse pickup fee on any return.\n- Refunds on returns are initiated at pickup, without waiting for quality check.\n\nZentroMart Plus does **not** change return windows, return eligibility or refund timelines after initiation."
+  },
+  {
+    "id": "REF-1",
+    "title": "Refunds policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-06-15",
+    "score": 0.5842,
+    "text": "[REF-1] When a refund is initiated\n- **Cancelled before shipping:** immediately on cancellation.\n- **Returned item:** after the item passes quality check, within 2 business days of pickup. ZentroMart Plus members: at pickup.\n- **Prepaid order refused at the door or not delivered after 3 attempts:** once the parcel reaches the warehouse, usually 7 to 10 calendar days after the last delivery attempt."
+  },
+  {
+    "id": "REF-6",
+    "title": "Refunds policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-06-15",
+    "score": 0.466,
+    "text": "[REF-6] Refund reference number\nEvery initiated refund has a refund reference number (RRN) that the customer's bank can trace. Share it when a customer says the money has not arrived."
+  },
+  {
+    "id": "ESC-1",
+    "title": "Escalation and human handover",
+    "doc_type": "agent_guide",
+    "status": "current",
+    "effective_from": "2026-07-01",
+    "score": 0.4225,
+    "text": "[ESC-1] When to hand over to a human\nHand over at once when any of these is true:\n\n1. **Damaged, defective or wrong item worth more than ₹10,000.**\n2. **Customer reports an order, payment or account activity they did not make.**\n3. **Customer mentions legal action, a consumer court or a police complaint.**\n4. **Third or later contact about the same issue within 7 days.**\n5. **Refund more than 3 business days past its maximum timeline.**\n6. **Customer asks for a human agent.**\n7. **Product safety risk such as a swelling battery, burning smell, sparks or injury.**\n\nFor the repeat-contact rule, use the `contacts_last_7_days` field returned by order lookup. It counts earlier contacts only, not the current one. Escalate when it is 2 or more."
+  },
+  {
+    "id": "products.csv:BKS-0058",
+    "title": "Product catalog",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.1071,
+    "text": "sku=BKS-0058; title=Pagecraft Guide: Learn Python in 30 Days; brand=Pagecraft; return_category=books_media; price_inr=789; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=Pagecraft Guide: Learn Python in 30 Days. Sold on ZentroMart."
+  },
+  {
+    "id": "holidays.csv",
+    "title": "Warehouse holidays",
+    "doc_type": "data",
+    "status": "current",
+    "effective_from": "",
+    "score": 0.1027,
+    "text": "Holidays skipped in business-day counts: 2026-08-15 Independence Day; 2026-10-02 Gandhi Jayanti; 2026-10-19 Warehouse closure (festival); 2026-11-09 Warehouse closure (festival)"
   },
   {
     "id": "products.csv:DGT-0069",
@@ -59,26 +77,35 @@
     "doc_type": "data",
     "status": "current",
     "effective_from": "",
-    "score": 0.0433,
+    "score": 0.0415,
     "text": "sku=DGT-0069; title=ZentroMart Gift Card ₹500; brand=ZentroMart; return_category=digital; price_inr=500; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=ZentroMart Gift Card ₹500. Sold on ZentroMart."
   },
   {
-    "id": "products.csv:DGT-0070",
-    "title": "Product catalog",
-    "doc_type": "data",
+    "id": "RET-2",
+    "title": "Returns policy",
+    "doc_type": "policy",
     "status": "current",
-    "effective_from": "",
-    "score": 0.0416,
-    "text": "sku=DGT-0070; title=ZentroMart Gift Card ₹1,000; brand=ZentroMart; return_category=digital; price_inr=1000; fulfilled_by=ZentroMart; assured=False; warranty_months=0; description=ZentroMart Gift Card ₹1,000. Sold on ZentroMart."
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[RET-2] Return windows by category\nThe return window starts on the **delivery date** and is counted in calendar days. The category of every product is listed in the `return_category` column of the product catalog.\n\n| Category | Return window | Catalog code |\n| --- | --- | --- |\n| Electronics and accessories | 7 days | `electronics` |\n| Clothing, footwear and bags | 15 days | `fashion` |\n| Home, kitchen and furniture | 10 days | `home_kitchen` |\n| Beauty and personal care (unopened, seal intact) | 7 days | `beauty_sealed` |\n| Books and stationery | 10 days | `books_media` |\n| Grocery, fresh and perishables | Not returnable | `grocery` |\n| Innerwear, lingerie and swimwear | Not returnable | `innerwear` |\n| Gift cards and digital codes | Not returnable | `digital` |"
   },
   {
-    "id": "products.csv:ELE-0010",
-    "title": "Product catalog",
-    "doc_type": "data",
+    "id": "RET-4",
+    "title": "Returns policy",
+    "doc_type": "policy",
     "status": "current",
-    "effective_from": "",
-    "score": 0.0323,
-    "text": "sku=ELE-0010; title=Voltra 65W GaN Fast Charger, Green; brand=Voltra; return_category=electronics; price_inr=2189; fulfilled_by=Sunrise Electronics; assured=True; warranty_months=12; description=Voltra 65W GaN Fast Charger, Green. Sold on ZentroMart. Ships from a marketplace seller."
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[RET-4] Condition of returned items\nItems must be unused, with original tags, packaging, accessories and free gifts. Beauty and personal care products are returnable only if unopened with the seal intact. Electronics must not be physically damaged, and any screen lock or account lock must be removed."
+  },
+  {
+    "id": "RET-5",
+    "title": "Returns policy",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-08-01",
+    "score": 0.0,
+    "text": "[RET-5] Items that cannot be returned\nGrocery and fresh produce, innerwear, lingerie and swimwear, and gift cards or digital codes cannot be returned for change of mind. If such an item arrives damaged, expired, wrong or missing, follow the Damaged, wrong or missing items policy."
   },
   {
     "id": "KB-00.1",
@@ -99,13 +126,13 @@
     "text": "[KB-00.3] Business days\nA business day is Monday to Saturday, excluding the warehouse holidays below. Refund and logistics timelines are counted in business days. Return windows are counted in calendar days.\n\n| Date | Holiday |\n| --- | --- |\n| 2026-08-15 | Independence Day |\n| 2026-10-02 | Gandhi Jayanti |\n| 2026-10-19 | Warehouse closure (festival) |\n| 2026-11-09 | Warehouse closure (festival) |"
   },
   {
-    "id": "ESC-1",
-    "title": "Escalation and human handover",
+    "id": "IDV-2",
+    "title": "Verifying the customer",
     "doc_type": "agent_guide",
     "status": "current",
     "effective_from": "2026-07-01",
     "score": 0.0,
-    "text": "[ESC-1] When to hand over to a human\nHand over at once when any of these is true:\n\n1. **Damaged, defective or wrong item worth more than ₹10,000.**\n2. **Customer reports an order, payment or account activity they did not make.**\n3. **Customer mentions legal action, a consumer court or a police complaint.**\n4. **Third or later contact about the same issue within 7 days.**\n5. **Refund more than 3 business days past its maximum timeline.**\n6. **Customer asks for a human agent.**\n7. **Product safety risk such as a swelling battery, burning smell, sparks or injury.**\n\nFor the repeat-contact rule, use the `contacts_last_7_days` field returned by order lookup. It counts earlier contacts only, not the current one. Escalate when it is 2 or more."
+    "text": "[IDV-2] How to verify\nAsk for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order. Compare with the `phone_last4` or `delivery_pincode` fields from order lookup."
   },
   {
     "id": "STY-1",

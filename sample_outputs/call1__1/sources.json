@@ -5,7 +5,7 @@
     "doc_type": "help",
     "status": "current",
     "effective_from": "2026-02-01",
-    "score": 0.765,
+    "score": 0.7601,
     "text": "[TRK-1] Order statuses\n| Status shown | What it means |\n| --- | --- |\n| Placed | Payment confirmed, waiting to be packed |\n| Packed | Packed at the warehouse, waiting for courier pickup |\n| Shipped | With the courier, on the way |\n| Out for delivery | With the delivery executive today |\n| Delivery attempted | The courier could not deliver; see DEL-3 |\n| Delivered | Handed over at the address |\n| Returned to origin (RTO) | Could not be delivered and is going back to the warehouse; prepaid refunds follow REF-1 |\n| Cancelled | Cancelled before shipping |"
   },
   {
@@ -14,7 +14,7 @@
     "doc_type": "agent_guide",
     "status": "current",
     "effective_from": "2026-07-01",
-    "score": 0.7282,
+    "score": 0.7385,
     "text": "[IDV-2] How to verify\nAsk for the order ID, then ask for **one** of: the last 4 digits of the registered phone number, or the delivery pincode for that order. Compare with the `phone_last4` or `delivery_pincode` fields from order lookup."
   },
   {
@@ -23,35 +23,35 @@
     "doc_type": "help",
     "status": "current",
     "effective_from": "2026-02-01",
-    "score": 0.7153,
+    "score": 0.6073,
     "text": "[TRK-2] Delivered but not received\nIf an order shows Delivered but the customer has not received it, check with family, neighbours or the building security, then report it within 48 hours as a missing item under DWM-1."
   },
   {
-    "id": "REF-6",
+    "id": "PAY-2",
+    "title": "Payments and cash on delivery",
+    "doc_type": "policy",
+    "status": "current",
+    "effective_from": "2026-04-01",
+    "score": 0.5178,
+    "text": "[PAY-2] Cash on delivery\nCOD is available on orders up to ₹10,000, only on pincodes where COD is enabled. A COD fee of ₹25 applies per order."
+  },
+  {
+    "id": "REF-5",
     "title": "Refunds policy",
     "doc_type": "policy",
     "status": "current",
     "effective_from": "2026-06-15",
-    "score": 0.5904,
-    "text": "[REF-6] Refund reference number\nEvery initiated refund has a refund reference number (RRN) that the customer's bank can trace. Share it when a customer says the money has not arrived."
+    "score": 0.5005,
+    "text": "[REF-5] Delivery and COD fees\nDelivery fees and the ₹25 cash-on-delivery fee are refunded only when the whole order is cancelled before shipping or returned because it was damaged, defective or wrong."
   },
   {
-    "id": "IDV-3",
-    "title": "Verifying the customer",
-    "doc_type": "agent_guide",
+    "id": "CAN-2",
+    "title": "Cancellations policy",
+    "doc_type": "policy",
     "status": "current",
-    "effective_from": "2026-07-01",
-    "score": 0.5608,
-    "text": "[IDV-3] If verification fails\nAllow one retry. If it fails again, do not share order details. Offer general policy help and suggest the customer contact support from the registered phone number."
-  },
-  {
-    "id": "IDV-1",
-    "title": "Verifying the customer",
-    "doc_type": "agent_guide",
-    "status": "current",
-    "effective_from": "2026-07-01",
-    "score": 0.556,
-    "text": "[IDV-1] When verification is needed\nBefore sharing anything about a specific order (status, items, address, amounts, refund details), verify the customer. General policy questions need no verification."
+    "effective_from": "2026-05-01",
+    "score": 0.5001,
+    "text": "[CAN-2] After the order ships\nA shipped order cannot be cancelled. The customer can:\n- refuse the parcel at the door. For cash-on-delivery orders nothing is charged. For prepaid orders the refund follows REF-1 once the parcel returns to the warehouse; or\n- accept the delivery and return the item within its return window, if the category is returnable."
   },
   {
     "id": "pincodes.csv:400053",
@@ -59,7 +59,7 @@
     "doc_type": "data",
     "status": "current",
     "effective_from": "",
-    "score": 0.0376,
+    "score": 0.0284,
     "text": "pincode city=Mumbai; state=Maharashtra; pincode=400053; metro=True; serviceable=True; cod_available=True; express_available=True"
   },
   {
@@ -68,7 +68,7 @@
     "doc_type": "data",
     "status": "current",
     "effective_from": "",
-    "score": 0.0376,
+    "score": 0.0284,
     "text": "pincode city=Mumbai; state=Maharashtra; pincode=400076; metro=True; serviceable=True; cod_available=True; express_available=True"
   },
   {
@@ -77,7 +77,7 @@
     "doc_type": "data",
     "status": "current",
     "effective_from": "",
-    "score": 0.0342,
+    "score": 0.0265,
     "text": "sku=FSH-0033; title=Kaafi Running Sneakers, White; brand=Kaafi; return_category=fashion; price_inr=2799; fulfilled_by=Shree Traders; assured=False; warranty_months=0; description=Kaafi Running Sneakers, White. Sold on ZentroMart. Ships from a marketplace seller."
   },
   {
