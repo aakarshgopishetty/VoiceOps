@@ -12,7 +12,19 @@ except Exception:
     pass
 
 # The dataset is NOT shipped in the submission. Point ZENTRO_DATASET at the extracted folder.
-DATASET = Path(os.environ.get("ZENTRO_DATASET", ROOT / "dataset")).expanduser()
+def _find_dataset():
+    """ZENTRO_DATASET if set (an empty value counts as unset), else look in the usual places."""
+    given = os.environ.get("ZENTRO_DATASET", "").strip().strip('"\'')
+    if given:
+        return Path(given).expanduser()
+    for p in (ROOT / "dataset", ROOT / "Capstone_Project_Dataset_FTTT_2026", ROOT.parent / "Capstone_Project_Dataset_FTTT_2026",
+              ROOT.parent / "dataset", Path.cwd() / "Capstone_Project_Dataset_FTTT_2026", Path.cwd() / "dataset"):
+        if (p / "kb").is_dir() and (p / "data").is_dir():
+            return p
+    return ROOT / "dataset"
+
+
+DATASET = _find_dataset()
 KB_DIR = DATASET / "kb"
 DATA_DIR = DATASET / "data"
 PRACTICE_DIR = DATASET / "practice"
